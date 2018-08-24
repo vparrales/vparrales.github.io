@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mission.css">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Dancing+Script" rel="stylesheet">
+  <title>Mission Green Delivery</title>
+  <link rel="shortcut icon" href="mission-img/Cannabis-leaf.png">
+  <style>
+  div.gallery {
+    /* border: solid #ccc 1px; */
+
+  }
+  div.gallery:hover {
+    border: solid #D6D6D6 1px;
+    border-radius: 2%;
+  }
+  div.gallery img {
+    width: 100%;
+    height: auto;
+
+  }
+  div.desc {
+    padding: 1px;
+    text-align: center;
+  }
+
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  @media only  screen and (max-width: 500px){
+    .resposive {
+      width: 100%;
+    }
+  }
+  .clearfix:after {
+    content:"";
+    display: table;
+    clear: both;
+  }
+
+/* dropdown menu styles */
+
+.dropbtn {
+    background-color: green;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-family: 'Architects Daughter',cursive;
+    border: none;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #439C49;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd}
+
+.show {display: block;}
+
+  </style>
+</head>
+<body>
+<header>
+    <h1>Mission <mark class="green">Green</mark> Delivery &commat; 415.756.9754</h1>
+    <div>
+      <div class="main-nav">
+        <ul class="nav">
+          <div>
+            <a href="#about"><button onclick="about()" class="dropbtn">About</button></a>
+          </div>
+        <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#flowers">Flowers</a>
+            <a href="#edibles">Edibles</a>
+            <a href="#concentrates">Concentrates</a>
+            <a href="#hash">Artisan Hash</a>
+            <a href="#prerolls">Prerolls</a>
+            <a href="#transdermals">Transdermals</a>
+            <a href="#vapes">Vapes</a>
+          </div>
+        </div>
+        <div>
+          <a href="#order"><button class="dropbtn">Order</button></a>
+        </div>
+        </ul>
+      </div>
+  </header>
+
+  <main>
+    <aside>
+      <h3>What patients love about Mission Green Delivery:</h3>
+      <ul class="patient-love">
+        <li>Top-shelf Flowers</li>
+        <li>Rewards Program</li>
+        <li>Free 1/8<sup>th</sup>after 10<sup>th</sup>order</li>
+        <li>Great Customer Service</li>
+      </ul>
+    </aside>
+    <h2 id="about">About</h2>
+    <p>Mission Green Delivery was established to meet the needs of patients who have little or no safe access to high quality medicinal cannabis. Our delivery service allows home-bound patients to receive their medicine reliably and safely. The fast, friendly
+      and discreet delivery service provides an alternative to the many uninviting crowded dispensary locations.</p>
+    <h2 class="center-text">Menu</h2>
+    <h3 id="flowers" class="text-color-green menu-category">Flowers</h3>
+
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/A&ccedil;aí-Cookies.jpg" alt="A&ccedil;aí-Cookies">
+        <div class="desc"><h4>A&ccedil;aí Cookies</h4><p class="text-color-green">1&sol;8&dollar;50 &middot; 1&sol;4&dollar;100</p></div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/blueberrykush.jpg" alt="Blueberry Kush">
+        <div class="desc"><h4>Blueberry Kush</h4><p class="text-color-green">1&sol;8 &dollar;50 &middot; 1&sol;4 &dollar;100</p></div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/candyjack.jpg" alt="Candy Jack">
+        <div class="desc"><h4>Candy Jack</h4><p class="text-color-green">1&sol;8 &dollar;50 &middot; 1&sol;4 &dollar;100</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/durbanpoison.jpg" alt="Durban Poison">
+        <div class="desc"><h4>Durban Poison</h4><p class="text-color-green">1&sol;8 &dollar;50 &middot; 1&sol;4 &dollar;100</p></div>
+      </div>
+    </div>
+
+  <div class="clearfix"></div>
+    <div class="responsive">
+      <div class="gallery">
+      <img src="menu-img/ForbiddenFruit.jpg" alt="Forbidden Fruit">
+      <div class="desc"><h4>Forbidden Fruit</h4><p class="text-color-green">1&sol;8 &dollar;50 1&sol;4 &dollar;100</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Gelato41.jpg" alt="Gelato 41">
+        <div class="desc"><h4>Gelato &num;41</h4><p class="text-color-green">1&sol;8 &dollar;50 1&sol;4 &dollar;100</p></div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/gsc.jpg" alt="Girl Scout Cookies">
+        <div class="desc"><h4>Girl Scout Cookies</h4><p class="text-color-green">1&sol;8 &dollar;50 1&sol;4 &dollar;100</p></div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Gello.jpg" alt="Gello">
+        <div class="desc"><h4>Gello</h4><p class="text-color-green">1&sol;8 &dollar;40 1&sol;4 &dollar;80</p></div>
+      </div>
+    </div>
+<div class="clearfix"></div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/GodBerry.jpg" alt="God Berry">
+        <div class="desc"><h4>God Berry</h4><p class="text-color-green">1&sol;8 &dollar;40 1&sol;4 &dollar;80</p></div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/gorillaglue4.jpg" alt="Gorilla Glue #4">
+        <div class="desc"><h4>Gorilla Glue &num;4</h4><p class="text-color-green">1&sol;8 &dollar;50 1&sol;4 &dollar;100</p></div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/House Blend Mix-A-Lot.jpg" alt="House Blend Mix A Lot">
+        <div class="desc"><h4>House Blend Mix A Lot</h4><p class="text-color-green">1&sol;4 &dollar;40</p></div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/High-Tech.jpg" alt="High Tech Cookies">
+        <div class="desc"><h4>High Tech Cookies</h4><p class="text-color-green">1&sol;8 &dollar;50 1&sol;4 &dollar;100</p></div>
+      </div>
+    </div>
+<div class="clearfix"></div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/j1.jpg" alt="J-1">
+        <div class="desc"><h4>J-1</h4><p class="text-color-green">1&sol;8 &dollar;50 1&sol;4 &dollar;100</p></div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/jamaicanlambsbread.jpg" alt="Jamaican Lambs Bread">
+        <div class="desc"><h4>Jamaican Lambs Bread</h4><p class="text-color-green">1&sol;8 &dollar;50 1&sol;4 &dollar;100</p></div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/OG-Kush.jpg" alt="OG Kush">
+        <div class="desc"><h4>OG Kush</h4><p class="text-color-green">1&sol;8 &dollar;40 1&sol;4 &dollar;80</p></div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Pleiades-NL5-Blueberry.jpg" alt="Pleiades-NL5-Blueberry">
+        <div class="desc"><h4>Pleiades NL5 &Cross; Blueberry </h4><p class="text-color-green">1&sol;8 &dollar;50 1&sol;4 &dollar;100</p></div>
+      </div>
+    </div>
+<div class="clearfix"></div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/trainwreck.jpg" alt="Trainwreck">
+        <div class="desc"><h4>Trainwreck</h4><p class="text-color-green">1&sol;8 &dollar;50 1&sol;4 &dollar;100</p></div>
+      </div>
+    </div>
+<div class="clearfix"></div>
+    <h3 id="edibles" class="text-color-green menu-category">Edibles</h3>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/abx50mg.jpg" alt="Absolute Xtracts 50mg soft gels">
+        <div class="desc"><h4>ABX &verbar; Soft Gels 50mg THC </h4><p class="text-color-green">&dollar;22</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/abxcbd.jpg" alt="Absolute Xtracts CBD soft gels">
+        <div class="desc"><h4>ABX &verbar; Soft Gels 18&colon;1 CBD</h4><p class="text-color-green">&dollar;20</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/CBD-spray-1-1.jpg" alt="CBD Balanced Spray">
+        <div class="desc"><h4>CBD Balanced Spray 15ml</h4><p class="text-color-green">&dollar;50</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/CBD-spray-18-1.jpg" alt="CBD Dominant Spray">
+        <div class="desc"><h4>CBD Dominant Spray 15ml</h4><p class="text-color-green">&dollar;50</p></div>
+      </div>
+    </div>
+<div class="clearfix"></div>
+<div class="responsive">
+  <div class="gallery">
+    <img src="menu-img/cbdcaps.jpg" alt="Gold Caps CBD 10mg">
+    <div class="desc"><h4>Gold Caps CBD 10mg</h4><p class="text-color-green">&dollar;40</p></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <img src="menu-img/Goldcaps25.jpg" alt="Gold Caps THC 25mg">
+    <div class="desc"><h4>Gold Caps THC 25mg</h4><p class="text-color-green">&dollar;30</p></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <img src="menu-img/GoldCaps35.jpg" alt="Gold Caps THC 35mg">
+    <div class="desc"><h4>Gold Caps THC 35mg</h4><p class="text-color-green">&dollar;40</p></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <img src="menu-img/Goldmist-single.jpg" alt="Gold Mist 1X">
+    <div class="desc"><h4>Gold Mist 1X</h4><p class="text-color-green">&dollar;40</p></div>
+  </div>
+</div>
+<div class="clearfix"></div>
+<div class="responsive">
+  <div class="gallery">
+    <img src="menu-img/blackberry180mg.jpg" alt="KIVA Blackberry">
+    <div class="desc"><h4>KIVA Blackberry 180mg</h4><p class="text-color-green">&dollar;20</p></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <img src="menu-img/kiva-mint.jpg" alt="KIVA Mint">
+    <div class="desc"><h4>KIVA Mint 180mg</h4><p class="text-color-green">&dollar;20</p></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <img src="menu-img/kiva-tangerine.jpg" alt="KIVA Tangerine">
+    <div class="desc"><h4>KIVA Tangerine 180mg</h4><p class="text-color-green">&dollar;20</p></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <img src="menu-img/milk60mg.jpg" alt="KIVA Milk">
+    <div class="desc"><h4>KIVA Milk 60mg</h4><p class="text-color-green">&dollar;10</p></div>
+  </div>
+</div>
+<div class="clearfix"></div>
+<div class="responsive">
+  <div class="gallery">
+    <img src="menu-img/ginger.jpg" alt="KIVA Ginger CBD">
+    <div class="desc"><h4>KIVA Ginger CBD 240mg</h4><p class="text-color-green">&dollar;32</p></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <img src="menu-img/kiva-mini-milk-dark-combo.jpg" alt="KIVA Mini Bars">
+    <div class="desc"><h4>KIVA Mini Bars</h4><p class="text-color-green">&dollar;3</p></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <img src="menu-img/BlueBytes.jpg" alt="KIVA Blueberry Bites">
+    <div class="desc"><h4>KIVA Blueberry Bites 120mg</h4><p class="text-color-green">&dollar;18</p></div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <img src="menu-img/EspressoBytes.jpg" alt="KIVA Espresso Bites">
+    <div class="desc"><h4>KIVA Espresso Bites 120mg</h4><p class="text-color-green">&dollar;18</p></div>
+  </div>
+</div>
+<div class="clearfix"></div>
+<div class="responsive">
+  <div class="gallery">
+    <img src="menu-img/trokie60mg.jpg" alt="Trokie 60mg">
+    <div class="desc"><h4>Trokie 60mg </h4><p class="text-color-green">&dollar;10</p></div>
+  </div>
+</div>
+<div class="clearfix"></div>
+    <h3 id="concentrates" class="text-color-green menu-category">Concentrates</h3>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Alien-OG.png" alt="Alien OG Shatter">
+        <div class="desc"><h4>Alien OG Shatter</h4><p class="text-color-green">&period;5 grams &dollar;25</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Forbidden-Gelato.png" alt="Forbidden Gelato">
+        <div class="desc"><h4>Forbidden Gelato</h4><p class="text-color-green">&period;5 grams &dollar;25</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/PureGold.jpg" alt="Pure Gold">
+        <div class="desc"><h4>Pure Gold</h4><p class="text-color-green">&dollar;50</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/SantaCruz-Diesel.jpg" alt="Santa Cruz Diesel Crumble">
+        <div class="desc"><h4>Santa Cruz Diesel Crumble</h4><p class="text-color-green">1 gram &dollar;40</p></div>
+      </div>
+    </div>
+<div class="clearfix"></div>
+    <h3 id="hash" class="text-color-green menu-category">Artisan Hash</h3>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Deadhead-OG.jpg" alt="Deadhead OG">
+        <div class="desc"><h4>Deadhead OG</h4><p class="text-color-green">1 gram &dollar;20</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Hash-Plant-Bubble-Hash.jpg" alt="Hash Plant">
+        <div class="desc"><h4>Hash Plant</h4><p class="text-color-green">1 gram &dollar;20</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/JahGoo.jpg" alt="Jah Goo">
+        <div class="desc"><h4>Jah Goo</h4><p class="text-color-green">1 gram &dollar;20</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Jilly-Bean-Hash.jpg" alt="Jilly Bean">
+        <div class="desc"><h4>Jilly Bean</h4><p class="text-color-green">1 gram &dollar;20</p></div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Purple-AK-Hash.jpg" alt="Purple AK">
+        <div class="desc"><h4>Purple AK</h4><p class="text-color-green">1 gram &dollar;20</p></div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <h3 id="prerolls" class="text-color-green menu-category">Prerolls</h3>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/CBDprerolls.jpg" alt="CBD prerolls">
+        <div class="desc"><h4>CBD Prerolls</h4><p class="text-color-green">&dollar;10</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/HouseBlendprerolls.jpg" alt="House Blend prerolls">
+        <div class="desc"><h4>House Blend Prerolls</h4><p class="text-color-green">&dollar;8</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Hashprerolls.jpg" alt="Hash prerolls">
+        <div class="desc"><h4>Hash Prerolls</h4><p class="text-color-green">&dollar;15</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/topshelf-prerolls.jpg" alt="Topshelf prerolls">
+        <div class="desc"><h4>Topshelf Prerolls</h4><p class="text-color-green">&dollar;15</p></div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <h3 id="transdermals" class="text-color-green menu-category">Transdermals</h3>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Patch-CBD-THC.jpg" alt="Mary's 1&colon;1 Patch">
+        <div class="desc"><h4>Mary's Transdermal 1&colon;1</h4><p class="text-color-green">&dollar;15</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Patch-CBD.jpg" alt="Mary's CBD Patch">
+        <div class="desc"><h4>Mary's Transdermal CBD</h4><p class="text-color-green">&dollar;15</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Patch-Sativa.jpg" alt="Mary's Sativa Patch">
+        <div class="desc"><h4>Mary's Transdermal Sativa</h4><p class="text-color-green">&dollar;15</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Marys-Medicinal-Pen.jpg" alt="Mary's Medicinal Pen">
+        <div class="desc"><h4>Mary's CBD Pen</h4><p class="text-color-green">&dollar;50</p></div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <h3 id="vapes" class="text-color-green menu-category">Vapes</h3>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/510-battery.jpg" alt="510 Tread Vape Pen">
+        <div class="desc"><h4>510 Tread Vape Pen</h4><p class="text-color-green">&dollar;15</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/cbd8.jpg" alt="ABX 8&colon;1 CBD">
+        <div class="desc"><h4>ABX 8&colon;1 CBD</h4><p class="text-color-green">&dollar;40</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Delta3Special.jpg" alt="DeltaCann Special">
+        <div class="desc"><h4>DeltaCann Special</h4><p class="text-color-green">&dollar;90</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/DeltaBlackBattery.png" alt="DeltaCann Battery Kit">
+        <div class="desc"><h4>DeltaCann Battery Kit</h4><p class="text-color-green">&dollar;20</p></div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/DeltaCann-1000mgAM.jpg" alt="DeltaCann AM 1000mg">
+        <div class="desc"><h4>DeltaCann AM 1000mg</h4><p class="text-color-green">&dollar;50</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Delta-Gelato1.jpg" alt="DeltaCann Gelato">
+        <div class="desc"><h4>DeltaCann Gelato 500mg</h4><p class="text-color-green">&dollar;35</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Delta-granddaddypurple.jpg" alt="DeltaCann Grand Daddy Purple">
+        <div class="desc"><h4>DeltaCann GDP 500mg</h4><p class="text-color-green">&dollar;35</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Deltahybryd1000mg.png" alt="DeltaCann Hybrid 1000mg">
+        <div class="desc"><h4>DeltaCann Hybrid 1000mg</h4><p class="text-color-green">&dollar;50</p></div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Delta-jackherer.jpg" alt="DeltaCann Jackherer">
+        <div class="desc"><h4>DeltaCann Jackherer 500mg</h4><p class="text-color-green">&dollar;35</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Delta-purplehaze.jpg" alt="DeltaCann Gelato">
+        <div class="desc"><h4>DeltaCann Purple Haze 500mg</h4><p class="text-color-green">&dollar;35</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Delta-sourtangie.jpg" alt="DeltaCann Grand Daddy Purple">
+        <div class="desc"><h4>DeltaCann Sour Tangie 500mg</h4><p class="text-color-green">&dollar;35</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Delta-sunsetsherbet.jpg" alt="DeltaCann Hybrid 1000mg">
+        <div class="desc"><h4>DeltaCann Sunset Sherbet 500mg</h4><p class="text-color-green">&dollar;35</p></div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Delta-superlemonhaze.jpg" alt="DeltaCann Super Lemon Haze">
+        <div class="desc"><h4>DeltaCann Super Lemon Haze 500mg</h4><p class="text-color-green">&dollar;35</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/dosis.jpg" alt="DeltaCann Gelato">
+        <div class="desc"><h4>Dosis Arouse</h4><p class="text-color-green">&dollar;100</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/earth_guardian.jpg" alt="DeltaCann Grand Daddy Purple">
+        <div class="desc"><h4>Earth Gurdian 1000mg</h4><p class="text-color-green">&dollar;60</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/himalaya.jpg" alt="Himalaya">
+        <div class="desc"><h4>Himalaya OG Kush 500mg</h4><p class="text-color-green">&dollar;35</p></div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/paxera.jpg" alt="Paxera">
+        <div class="desc"><h4>Paxera</h4><p class="text-color-green">&dollar;20</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Sublime-ACDC-Sleep.jpg" alt="Sublime ACDC Sleep">
+        <div class="desc"><h4>Sublime ACDC Sleep</h4><p class="text-color-green">&dollar;30</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Sublime-Lamb's-Bread.jpg" alt="DeltaCann Grand Daddy Purple">
+        <div class="desc"><h4>Sublime Lamb's Bread</h4><p class="text-color-green">&dollar;25</p></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <img src="menu-img/Sublime-xxx-og.jpg" alt="Himalaya">
+        <div class="desc"><h4>Sublime XXX OG</h4><p class="text-color-green">&dollar;25</p></div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+
+  </main>
+  <div id="order">
+  <h2>Order Form</h2>
+  <form action="/action_page.php">
+    First name: <br>
+    <input type="text" name="firstname" value="">
+    <br>
+    Last name: <br>
+    <input type="text" name="lastname" value="">
+    <br>
+    Address: (Delivery in SF only)<br>
+    <input type="text" name="firstname" value="">
+    <br>
+    Order Details: <br>
+    <textarea rows="8" cols="100" name="comment" form="usrform"></textarea><br>
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+  <footer>
+    <ul>
+      <li><a href="https://twitter.com/missiongreend" target="_blank" class="social twitter">Twitter</a></li>
+      <li><a href="https://www.facebook.com/mission.green.589" class="social facebook" target="_blank">Facebook</a></li>
+      <li><a href="https://www.instagram.com/missiongreendelivery/" class="social linkedin" target="_blank">Instagram</a></li>
+    </ul>
+      <p><strong>Copyright 2018 © Mission Green Delivery</strong></p>
+  </footer>
+<p><strong><a href="#">Back to Top &And;</a></strong></p>
+  </div>
+
+  <script>
+
+  function about() {
+    document.getElementById("about");
+}
+
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+</body>
+</html>
+
+<!-- <div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div> -->
