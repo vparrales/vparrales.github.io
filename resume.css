@@ -1,0 +1,24 @@
+body{
+  font-family: 'Architects Daughter', cursive;
+}
+
+.main-image {
+  border: solid black 5px;
+  border-radius: 50%;
+}
+
+h1{
+  background-color: #e2e2e2;
+  padding: 5px;
+}
+.first-section-title{
+  text-transform: capitalize;
+}
+footer{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #f7f5f0;
+}
