@@ -21,9 +21,10 @@ h1 {
  color: red;
  text-align: center;
 }
-span {
+p:first-letter {
   float: left;
   font-size: 2.5em;
   font-weight: bold;
   font-style: italic;
+  margin-right: 8px;
 }
