@@ -5,6 +5,7 @@ color: red;
 <body bgcolor="yellow" link="red" vlink="blue">
 <h1><font color="red"><center>This is the first heading</center></font></h1>
 
+<p><font size="40"><b><i>T</i></b></font>his is my first paragraph and all the paragraphs in this page will start with a bigger font</p>
 */
 * {
   background-color: yellow;
@@ -19,4 +20,8 @@ color: red;
 h1 {
  color: red;
  text-align: center;
+}
+span {
+  float: left;
+  font-size: 2.5em
 }
