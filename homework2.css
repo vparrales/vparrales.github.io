@@ -3,6 +3,7 @@ color: red;
 } 
 
 <body bgcolor="yellow" link="red" vlink="blue">
+<h1><font color="red"><center>This is the first heading</center></font></h1>
 
 */
 * {
@@ -13,4 +14,9 @@ color: red;
   a:visted {
    color: blue; 
   }
+}
+
+h1 {
+ color: red;
+ text-align: center:
 }
