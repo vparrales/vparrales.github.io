@@ -35,3 +35,12 @@ h2 {
   color: blue;
   font-style: italic;
 }
+
+/* <h2 class="header2" align="right"><font color="blue" size="30px"><i>End of this exercise</i></font></h2> */
+
+.header2 {
+  text-align: right;
+  color: blue;
+  text-size: 1.875em;
+  
+}
