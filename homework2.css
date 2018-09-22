@@ -21,7 +21,7 @@ h1 {
  color: red;
  text-align: center;
 }
-p::first-letter {
+p:first-letter {
   float: left;
   font-size: 2.5em;
   font-weight: bold;
