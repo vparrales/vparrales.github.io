@@ -27,4 +27,5 @@ p:first-letter {
   font-weight: bold;
   font-style: italic;
   margin-right: 8px;
+  line-height: 2%;
 }
