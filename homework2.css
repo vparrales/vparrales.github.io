@@ -52,3 +52,11 @@ h3 {
   color: red;
 }
 
+/* <table bgcolor="cyan" cellpadding="10px" cellspacing="5px"> */
+
+table {
+  background-color: cyan;
+  padding: 10px:
+  text-align: center;
+}
+
