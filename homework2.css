@@ -44,3 +44,11 @@ h2.header2 {
   font-size: 3.75em;
   
 }
+
+/* <h3 align="right"><font color="red">The table showing below</font></h3> */
+
+h3 {
+  text-align: right;
+  color: red;
+}
+
