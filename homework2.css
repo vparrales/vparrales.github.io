@@ -25,7 +25,8 @@ p::first-letter {
   float: left;
   font-size: 2.5em;
   font-weight: bold;
-  font-style: italic;  
+  font-style: italic;
+  vertical-align:text-bottom;
 }
 
 /* <h2 align="right"><font color="blue"><i>Using CSS</i></font></h2> */
