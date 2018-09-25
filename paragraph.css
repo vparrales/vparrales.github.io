@@ -1,5 +1,5 @@
 
-span {
+p::first-letter {
 /*   float: left; */
   font-size: 2.5em;
   font-weight: bold;
