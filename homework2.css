@@ -22,7 +22,7 @@ h1 {
  text-align: center;
 }
 span {
-  float: left;
+/*   float: left; */
   font-size: 2.5em;
   font-weight: bold;
   font-style: italic;
