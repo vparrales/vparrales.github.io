@@ -1,12 +1,3 @@
-/* * {
-color: red;
-} 
-
-<body bgcolor="yellow" link="red" vlink="blue">
-<h1><font color="red"><center>This is the first heading</center></font></h1>
-
-<p><font size="40"><b><i>T</i></b></font>his is my first paragraph and all the paragraphs in this page will start with a bigger font</p>
-*/
 * {
   background-color: yellow;
   a:link {
@@ -21,18 +12,12 @@ h1 {
  color: red;
  text-align: center;
 }
-span {
-/*   float: left; */
+p::first-letter {
   font-size: 2.5em;
   font-weight: bold;
   font-style: italic;
   
 }
-
-p {
-  vertical-align: text-bottom;
-}
-/* <h2 align="right"><font color="blue"><i>Using CSS</i></font></h2> */
 
 h2 {
   text-align: right;
@@ -45,7 +30,7 @@ h2 {
 h2.header2 {
   text-align: right;
   color: blue;
-  font-size: 3.75em;
+  font-size: 3.125em;
   
 }
 
