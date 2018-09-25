@@ -1,1 +1,12 @@
 
+span {
+/*   float: left; */
+  font-size: 2.5em;
+  font-weight: bold;
+  font-style: italic;
+  
+}
+
+p {
+  vertical-align: text-bottom;
+}
