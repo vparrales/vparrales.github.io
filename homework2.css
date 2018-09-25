@@ -13,7 +13,7 @@ h1 {
  text-align: center;
 }
 p::first-letter {
-  font-size: 2.8125em;
+  font-size: 2.9375em;
   font-weight: bold;
   font-style: italic;
   
@@ -30,7 +30,7 @@ h2 {
 h2.header2 {
   text-align: right;
   color: blue;
-  font-size: 3.125em;
+  font-size: 3em;
   
 }
 
