@@ -57,6 +57,7 @@ table tr td {
 table {
    animation-name: table;
   animation-duration: 5s;
+  animation-iteration-count: 1;
 }
 @keyframes table {
   from {background-color: cyan;}
