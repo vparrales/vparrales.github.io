@@ -43,13 +43,19 @@ h3 {
 
 /* <table bgcolor="cyan" cellpadding="10px" cellspacing="5px"> */
 
-tr td {
+table tr td {
   background-color: cyan;
 /*   padding: 10px; */
 /*   margin: 5px; */
   text-align: center;
   font-weight: bold;
+  animation-name: table;
+  animation-duration: 5s;
 /*   border: 5px solid cyan; */
 /*   border-spacing: 0px; */
 }
 
+@keyframes table {
+  from {background-color: cyan;}
+  to {background-color: green;}
+}
