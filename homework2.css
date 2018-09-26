@@ -43,7 +43,7 @@ h3 {
 
 /* <table bgcolor="cyan" cellpadding="10px" cellspacing="5px"> */
 
-tr td {
+ tr td {
 /*   background-color: cyan; */
 /*   padding: 10px; */
 /*   margin: 5px; */
@@ -55,6 +55,7 @@ tr td {
 /*   border-spacing: 0px; */
 }
 table {
+  background-color: cyan;
   animation-name: table;
   animation-duration: 5s;
   animation-iteration-count: 1;
