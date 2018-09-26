@@ -60,8 +60,14 @@ table {
   animation-iteration-count: 1;
 }
 @keyframes table {
-  from {background-color: cyan;}
-  to {background-color: green;}
-  from {color: black;}
-  to {color: white:}
+  0% {background-color: cyan;}
+  100% {background-color: green;}
+/*   from {color: black;}
+  to {color: white:} */
+}
+
+@keyframes table {
+  0% {color: black;}
+  100% {color: white:}
+}
 }
