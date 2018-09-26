@@ -55,19 +55,18 @@ tr td {
 /*   border-spacing: 0px; */
 }
 table {
-   animation-name: table;
+  animation-name: table;
   animation-duration: 5s;
   animation-iteration-count: 1;
 }
-@keyframes table {
-  0% {background-color: cyan;}
-  100% {background-color: green;}
-/*   from {color: black;}
-  to {color: white:} */
-}
 
 @keyframes table {
-  0% {color: black;}
-  100% {color: white;}
-}
+  0% {
+    background-color: cyan;
+    color: black;
+  }
+  100% {
+    background-color: green;
+    color: white;
+  }
 }
