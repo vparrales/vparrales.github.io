@@ -61,4 +61,6 @@ table {
 @keyframes table {
   from {background-color: cyan;}
   to {background-color: green;}
+  from {color: black;}
+  to {color: white:}
 }
