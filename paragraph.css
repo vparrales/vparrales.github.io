@@ -1,6 +1,6 @@
 
 /* p::first-letter {
-/*   float: left; */
+  float: left; 
   font-size: 3.125em;
   font-weight: bold;
   font-style: italic;
@@ -24,4 +24,16 @@ tr td {
   text-align: center;
 }
 
+table { 
+  border: 1px solid cyan;
+    animation-name: table;
+  animation-duration: 5s;
+  animation-iteration-count: 1; 
+}
 
+@keyframes table {
+  0% {background-color: cyan;}
+  100% {background-color: green;}
+/*   from {color: black;}
+  to {color: white:} */
+}
