@@ -12,6 +12,10 @@ h1 {
  color: red;
  text-align: center;
 }
+
+.red {
+    color: red;
+}
 p::first-letter {
   font-size: 2.9375em;
   font-weight: bold;
@@ -43,15 +47,19 @@ h3 {
 
 /* <table bgcolor="cyan" cellpadding="10px" cellspacing="5px"> */
 
- tr td {
+ tr td th {
   text-align: center;
-  font-weight: bold;
+
 }
-table, td{
-/*   border: 1px solid cyan; */
+
+table, td, th {
+    
   animation-name: table;
   animation-duration: 5s;
   animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  padding: 14px;
+  border-collapse: collapse;
 }
 
 @keyframes table {
@@ -63,4 +71,29 @@ table, td{
     background-color: green;
     color: white;
   }
+}
+
+@keyframes banner {
+    from {
+        background-color: purple;
+        left: 0;
+    }
+    to {
+        background-color: orangered;
+        left: calc(100% - 320px);
+    }
+}
+
+#banner {
+    width: 300px;
+    height: 50px;
+    background-color: yellow;
+    animation: banner 10s infinite alternate;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    padding-top: 20px;
+    font-family: cursive;
+    border-radius: 7%;
 }
