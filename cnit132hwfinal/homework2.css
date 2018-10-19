@@ -1,0 +1,112 @@
+/*<body bgcolor="yellow" link="red" vlink="blue">*/
+
+body {
+ background-color: yellow;
+}
+
+a:link {
+ color: red; 
+ text-decoration: none;
+}
+
+a:visited {
+ color: white; 
+}
+
+/*<h1><font color="red"><center>This is the first heading</center></font></h1>*/
+h1 {
+ color: red;
+ text-align: center;
+}
+
+/*<font color="red">*/
+
+.red {
+ color: red;
+}
+
+/*<p><font size="40"><b><i>T</i></b></font>*/
+
+p::first-letter {
+ font-size: 2.9375em;
+ font-weight: bold;
+ font-style: italic; 
+}
+
+/*<h2 align="right"><font color="blue"><i>Using CSS</i></font></h2>*/
+
+h2 {
+ text-align: right;
+ color: blue;
+ font-style: italic;
+}
+
+/* <h2 class="header2" align="right"><font color="blue" size="30px"><i>End of this exercise</i></font></h2> */
+
+h2.header2 {
+ text-align: right;
+ color: blue;
+ font-size: 3em; 
+}
+
+/* <h3 align="right"><font color="red">The table showing below</font></h3> */
+
+h3 {
+ text-align: right;
+ color: red;
+}
+
+/* <table bgcolor="cyan" cellpadding="10px" cellspacing="5px"> */
+
+tr td {
+ text-align: center;
+
+}
+
+/*animated table*/
+
+table, td, th {
+    
+ animation-name: table;
+ animation-duration: 5s;
+ animation-iteration-count: 1;
+ animation-fill-mode: forwards;
+ padding: 14px;
+ border-collapse: collapse;
+}
+
+@keyframes table {
+ 0% {
+     background-color: cyan;
+     color: black;
+}
+ 100% {
+     background-color: green;
+     color: white;
+}
+}
+
+/*animated banner below h1*/
+
+@keyframes banner {
+  from {
+      background-color: purple;
+      left: 0;
+    }
+  to {
+      background-color: orangered;
+      left: calc(100% - 320px);
+    }
+}
+
+#banner {
+    width: 300px;
+    height: auto;
+    animation: banner 10s infinite alternate;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    font-family: cursive;
+    border-radius: 7%;
+}
