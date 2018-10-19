@@ -1,0 +1,33 @@
+/* change background color and position */
+
+@keyframes myfirst
+{
+0%   {background: red; left:0px; top:0px;}
+25%  {background: yellow; left:200px; top:0px;}
+50%  {background: blue; left: calc(100% - 100px); top:200px;}
+75%  {background: green; left:0px; top:200px;}
+100% {background: red; left:0px; top:0px;}
+}
+
+#box
+{
+width:100px;
+height:100px;
+background:red;
+position:relative;
+/* animation part */
+animation-name: myfirst;
+animation-duration: 5s;
+animation-timing-function: linear;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-play-state: running;
+
+/* the #box CSS, in the animationt part, could be written like what is shown below:
+#box
+{
+animation: myfirst 5s linear 2s infinite alternate;
+
+
+*/

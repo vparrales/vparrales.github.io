@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Examples of the Box Model</title>
+<meta charset="utf-8">
+<style>
+body { background-color: #FFFFFF;
+}
+h1 { background-color: #D1ECFF; 
+       padding-left: 60px;
+       border-bottom: 5px solid black;
+       text-shadow: 3px 3px 3px #666;
+       padding-top: 60px;
+       margin-top: 60px;
+}
+#box { background-color: #74C0FF;
+/*       margin-left: 60px;*/
+       width: 50%;
+	   padding: 5px 10px;
+       border: 5px transparent solid;
+/*       float: left;*/
+       box-sizing: border-box;
+       border-radius: 10px 5px 20px 10px;
+       margin-bottom: 30px;
+}
+    #box1 {
+        background-color: aquamarine;
+        width: 50%;
+        border: 3px red solid;
+/*        float: left;*/
+/*        box-sizing: border-box;*/
+        margin-bottom: 30px;
+        box-shadow: 10px 50px 10px #828282;
+        
+    }
+    
+    #box2 {
+        background-color: bisque;
+        border: 5px transparent solid;
+        border-radius: 50%;
+        width: 500px;
+        height: 500px;
+        line-height: 500px;
+        text-align: center;
+        
+        position: relative;
+        animation: big 5s 2s alternate infinite;
+        
+/*        padding-left: 250px;*/
+    }
+    
+    @keyframes big {
+        from {
+            background-color: purple;
+            left: 0;
+    }
+        to {
+            background-color: orangered;
+            color: white;
+            opacity: 0;
+            left: calc(100% - 505px);
+        }
+    }
+
+ 
+
+    
+    
+    h3 {
+/*        float: left;*/
+        text-align: center;
+        margin-right: 8px;
+        text-shadow: 5px 5px 5px #828282;
+        opacity: 1;
+    
+    }
+    p{
+        clear: left;
+    }
+    #content {
+        background-image: url(fall.jpg);
+        background-color: #FFFFFF; opacity: 0.6;
+    }
+</style>
+</head>
+<body>
+<h1>Examples of the Box Model</h1>
+<div id="box">HTML elements display as boxes on web pages. This div element is configured to have a blue background. HTML elements display as boxes on web pages. This div element is configured to have a blue background. </div>
+<div id="box1">HTML elements display as boxes on web pages. This div element is configured to have a blue background. HTML elements display as boxes on web pages. This div element is configured to have a blue background. </div>
+<div id="box2"><h3>I am a circle</h3></div>
+
+    
+<h3>This is a heading 3</h3>
+<p>This is a paragraph below the h3 heading</p>
+
+<div id="content">
+    <h1>Fall natural hikes</h1>
+    </div>
+</body>
+</html>

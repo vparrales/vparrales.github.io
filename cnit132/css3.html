@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Working with CSS</title>
+    <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+<style type="text/css">
+	.centered {color:red; font-style:italic; text-align:center;}
+	.general {font-style:italic; margin-left:0.5cm;}
+	.equation {font-family:Symbol; text-align:center;}
+    .boldblue {
+        font-style: bold;
+        color: blue;
+    }
+    h1 {
+        font-family: 'Charmonman', cursive;
+/*
+        border-style: solid dashed dotted;
+        border-width: 2px;
+        border-color: blue red;
+*/
+        border-bottom: solid red 5px;
+    }
+
+</style>
+</head>
+<body>
+<h1 class="centered">Centralized red heading</h1>
+<p class="general">This paragraph uses the general class and its left margin <span class="boldblue">will be shifted to the right</span> in relation to the paragraph that comes right after this one and does not use any of the defined classes.</p>
+<p>This paragraph does not use any defined class</p>
+<p class="centered">Although this is a paragraph, it uses the same class of the heading</p>
+<p>The formula is presented below:</p>
+<p class="equation">a + b = 1</p>
+    
+   
+
+
+
+</body>
+</html>

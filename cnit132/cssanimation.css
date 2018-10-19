@@ -1,0 +1,33 @@
+@keyframes myfirst
+{
+from {background: red; font-size: 1em;}
+to {background: yellow; font-size: 3em;}
+}
+
+#header
+{
+    background-color: yellow;
+/*animation: myfirst 5s 10s infinite alternate;*/
+/*    animation-direction: alternate;*/
+
+} 
+
+@keyframes box {
+    from {
+        background-color: red;
+        left: 0;
+    }
+    to {
+        background-color: yellow;
+        left: calc(100% - 200px);
+        
+    }
+}
+
+#redbox {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation: box 7s infinite alternate;
+    position: relative;
+}

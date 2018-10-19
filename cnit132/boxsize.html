@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+<meta charset="utf-8">
+<title>innerHTML</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+ * { box-sizing: border-box; }
+ #div1 { padding:5px; background-color:cyan; border: 2px solid red;}
+ #div2 { padding: 5px; background-color:yellow; color:red; border: 2px solid blue; }
+ h1 {text-align:center; }
+ @media screen and (max-width:480px) {
+ #div1, #div2 { width:100%;}
+ }
+ @media screen and (min-width:481px) {
+ #div1 { width: 300px; float:left;}
+ #div2 { margin-left: 301px; }
+ }
+ </style>
+ <body>
+ <h1>Heading 1</h1>
+<div id="div1">
+<h2>My heading 2</h2>
+<p>This is the paragraph inside div1</p>
+<p>Another paragraph inside div 1</p>
+<p>A third paragraph inside div 1 but that will be the last one for sure!</p>
+</div>
+<div id="div2">
+<h2>My heading 2 in div 2</h2>
+<p>Paragraph in div 2 in desktop this div will be on the right side of div 1</p>
+<p>Paragraph in div 2 again and this will be the last paragraph in this div 2</p>
+<ul>
+  <li>item 1 div2</li>
+  <li>item 2 div2</li>
+</ul>
+</div>
+</body>
+</html>
