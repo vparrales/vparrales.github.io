@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content=" modifying message of input boxes">
+  <title>Forms and JavaScript</title>
+  <style>
+     abbr { font-weight: bold; color: red; }
+	 
+	 h1 { text-align: center; }
+	 
+	 form { width: 70%; margin: 0 auto; background-color: #CCCCCC; }
+	 
+	 input:invalid { background-color: yellow; }
+	 
+	 input:valid { box-shadow: 1px 1px 1px skyblue; }
+  </style>
+</head>
+
+<body>
+
+  <h1>Contact Us</h1>
+  <form method="get" action="#">
+    <label for="fullname">Full Name: <abbr title="Required">**</abbr></label><br>
+	<input type="text" id="fullname" name="fullname" maxlength="35" required placeholder="Full Name">
+	<br><br>
+	<label for="username">Username: </label><br>
+	<input type="text" name="username" id="username" placeholder="username" pattern="[a-z]{1,15}" title="Username should have up to 15 lowercase characters">
+    <br><br>
+	<label for="email">Email Address: </label><br>
+	<input type="email" id="email" name="email" placeholder="jdoe@domain.com">
+	<br><br>
+	<button>Submit</button>
+  </form>
+	
+	<script>
+	  var email = document.getElementById("email");
+	  email.addEventListener("input", function(ev) {
+	     if (email.validity.typeMismatch) {
+		    email.setCustomValidity("Please, this seems not to be a valid email!");
+		 } else {
+		    email.setCustomValidity("");
+		 }
+	  });
+	</script>
+	
+</body>
+</html>
+
