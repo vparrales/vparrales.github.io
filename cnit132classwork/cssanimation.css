@@ -1,3 +1,5 @@
+/* change background color and position */
+
 @keyframes myfirst
 {
 0%   {background: red; left:0px; top:0px;}
@@ -28,3 +30,4 @@ animation-play-state: running;
 {
 animation: myfirst 5s linear 2s infinite alternate;
 }
+*/
