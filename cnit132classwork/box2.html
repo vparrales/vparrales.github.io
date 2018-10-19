@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Examples of the Box Model</title>
+<meta charset="utf-8">
+<style>
+body { background-color: #FFFFFF;
+}
+h1 { background-color: #D1ECFF; 
+       padding-left: 60px; margin-top: 60px; text-shadow: 5px 5px 5px #828282;}
+#box { background-color: #74C0FF;
+       /* margin-left: 60px; */
+    width: 50%;
+	   padding: 5px 10px;
+    border: transparent 5px solid;
+    /* float:left; */
+    box-sizing: border-box;
+    border-radius: 10px 5px 20px 10px;
+    margin-bottom: 30px;
+}
+    
+    #box1 { background-color: aquamarine; width:50%; border: red 3px solid; 
+    /* float: left; */ box-sizing: border-box; margin-bottom: 30px;
+    box-shadow: 10px 30px 10px #828282;}
+    
+    .circle { width: 200px; height: 200px; border: transparent; border-radius:100px; background-color: chocolate; line-height: 200px; text-align:center;
+    animation: big 10s 2s alternate infinite; position:relative;}
+    
+    @keyframes big {
+        from { left: 0; }
+        to { left: calc(100% - 200px);
+        opacity: 0;
+        color: white;
+        background-color: green;}
+    }
+</style>
+</head>
+<body>
+<h1>Examples of the Box Model</h1>
+<div id="box">HTML elements display as boxes on web pages. This div element is configured to have a blue background. HTML elements display as boxes on web pages. This div element is configured to have a blue background. </div>
+<div id="box1">HTML elements display as boxes on web pages. This div element is configured to have a blue background. HTML elements display as boxes on web pages. This div element is configured to have a blue background. </div>
+    
+    <div class="circle"><h3>I am a circle</h3></div>
+
+
+
+</body>
+</html>
