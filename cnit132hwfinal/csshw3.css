@@ -51,7 +51,7 @@ table {
     border-right: 2px solid black;
     border-bottom: 2px solid black;
     border-left: 2px solid gray;
-    background-image: url(../53js.gif);
+    background-image: url(../cnit132-img/53js.gif);
     background-position: right;
     background-repeat: no-repeat;
 }
@@ -91,7 +91,7 @@ ul {
 }
 
 footer {
-    background-image: url(../53js.gif), radial-gradient(magenta, white);
+    background-image: url(../cnit132-img/53js.gif), radial-gradient(magenta, white);
     background-position:bottom;
     background-repeat: no-repeat;
 }
