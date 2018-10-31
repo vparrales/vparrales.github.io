@@ -1,5 +1,5 @@
 body {
-    background: white url(../cnit132/hwproject/background.jpg); 
+    background: white url(../cnit132/background.jpg); 
     color: black;
     font-family: "Nunito Sans", sans-serif;
     margin: 0;
@@ -18,7 +18,7 @@ body {
 }
 
 .firstheading {
-    background: #000033 url(../cnit132/hwproject/sunset.jpg) no-repeat right;
+    background: #000033 url(../cnit132/sunset.jpg) no-repeat right;
     height: 72px;
     color: white;
     padding-left: 10px;
