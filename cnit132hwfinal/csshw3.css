@@ -92,6 +92,6 @@ ul {
 
 footer {
     background-image: url(../cnit132-img/53js.gif), radial-gradient(magenta, white);
-    background-position:right;
+    background-position: center;
     background-repeat: no-repeat;
 }
