@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome
+
+Please explore around and check out my work. I am an spiring web developer learning HTML5, CSS and javaScript. 
 
 You can use the [editor on GitHub](https://github.com/vparrales/vparrales.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
