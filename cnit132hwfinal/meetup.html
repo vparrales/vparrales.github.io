@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name="description" content="This page was created for the MeetUp Report for HTML CNIT-132 Intermediate & CSS class">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+ <title>MeetUp Report</title>
+ <style>
+     
+     * {
+          box-sizing: border-box;
+     }
+     
+     body {
+         width: 80%;
+         width: 960px;
+         margin: 0 auto;
+         font-family: 'Lato', sans-serif;
+         font-size: .9em;
+         word-spacing: 1px;
+         letter-spacing: .3px;
+         line-height: 26px;
+         -webkit-font-smoothing: antialiased;
+     }
+     
+     #wrapper {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: auto auto auto auto;
+         grid-template-areas:
+             "nav nav nav nav"
+             "img img img img"
+             "firstp firstp firstp firstp"
+             "footer footer footer footer";
+     }
+     
+     nav {
+         grid-area: nav;
+         grid-column: 1 / 5;
+         grid-row: 1 / 2;
+     }
+     
+    img {
+         padding: 10px;
+         border-radius: 2%;
+         margin-top: 0;
+         grid-area: img;
+         grid-column: 1 / 5;
+         grid-row: 2 / 3;
+         margin: 0 auto;
+         width: 500px;
+         height: auto; 
+     }
+     
+    .firstp {
+         grid-area: firstp;
+         grid-column: 1 / 5;
+         grid-row: 3 / 4;
+         padding: 0 10px 0 10px;
+         border-left: 1px solid #ddd;
+     }
+
+     #footer {
+         grid-area: footer;
+         grid-column: 1 / 5;
+         grid-row: 4 / 5;
+         text-align: center;
+         padding-bottom: 20px;
+     }
+     
+     nav ul {
+         list-style: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: #333;
+     }
+     
+     nav li {
+         float: left;
+         border-right: 1px solid #bbb;
+     }
+     
+     nav ul li.right {
+         float:right;
+     }
+     
+     nav li:last-child {
+         border-right: none;
+     }
+     
+     nav li a {
+         display: block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+     }
+     
+    nav li > a:hover {
+         background-color: #111;
+         color: lightgreen;
+     }
+     
+     div  a {
+         text-decoration: none;
+         color: cadetblue; 
+     }
+     
+     div > a:visited {
+         color: palevioletred; 
+     }
+     
+     div a:hover {
+         color: lightgreen;
+     }
+     
+     li > a:active {
+/*       background-color: lightgreen;*/
+     }
+     
+     p::first-letter {
+         font-size: 1.7em;
+         font-weight: bold;
+     }
+     
+     @media screen and (max-width: 600px) {
+         ul li {
+             float: none;
+         }
+         
+        nav ul li.right {
+             float: none;
+             display: inline-block;
+             display: block;
+         }
+         
+         nav, img, .firstp {
+             width: 100%;
+             
+     }
+     
+        body, #wrapper {
+             margin: 0;
+             box-sizing: border-box;
+/*           overflow-x: hidden;*/
+    }
+         
+     }
+      
+/*
+     .secondp {
+         grid-area: secondp;
+         grid-column: 1 / 5;
+         grid-row: 5 / 6;
+         padding: 0 10px 0 10px;
+         border-left: 1px solid #ddd;
+         
+     }
+     
+     .thirdp {
+         grid-area: thirdp;
+         grid-column: 1 / 5;
+         grid-row: 4 / 5;
+     }
+*/
+     
+/*
+     h1 {
+         text-align: center;
+         grid-area: h1;
+         grid-column: 1 / 5;
+         grid-row: 3 / 4;
+         height: 10px;
+         margin-top: 90px;
+     }
+*/
+     
+/*
+     li a:hover {
+         background-color: lightgreen;
+     }
+*/
+     
+/*
+     .active {
+         background-color: lightgreen;
+     }
+*/
+
+/*
+    a:link, a:visited {
+        text-decoration: none;
+        color: deepskyblue;
+     }
+*/
+     
+ </style>
+ </head>
+ <body>
+<div id="wrapper"> 
+<nav>
+    <ul>
+        <li><a class="active" href="#about">About</a></li>
+        <li><a href="#">Location</a></li>
+        <li class="right"><a href="https://codeselfstudy.com/" target="_blank" rel="noopener">Code Self Study</a></li>
+    </ul>
+</nav>
+<img src="codeselfstudy.jpg" alt="This is where the image of me participating at the meetup">
+<!--    <h1>Code Self Study</h1>-->
+<div class="firstp" id="about">
+    <p>Code Self Study is a self-directed meetup group based in Berkeley that meets twice per week:</p>
+        <ul>
+            <li>Wednesday's 10:00am - 1:00pm @ Berkeley <a class="map" href="https://goo.gl/maps/NjkhatF9SYL2" target="_blank" rel="noopener">South Branch Library</a></li>
+            <li>Saturday's 2:00pm - 5:00pm @<a class="map" target="_blank" rel="noopener" href="https://goo.gl/maps/GcQQvdnppz12"> Au Coquelet</a></li>
+        </ul>
+    <p>Most sessions are self-directed without a fixed plan or leader. During a meetup members can work on a project independently or partner up for pair programming. Optional activities can be organized by an organizer from the group. Experienced programers in the group can offer mentorship for your learning. The group objectives are to learn new skills, meet friendly creative people, form study groups, provide networking opportunities and assistance in job placement. The array of languages that members work with cover the whole spectrum ranging from Python, JavaScript, Rust, Java, Scheme, Racket, Haskell, Clojure, Common Lisp, C, C++, C#, F#, Lua, Elixir, Erlang, Elm, Purescript, Ruby, Scala, PHP, Go, R, HTML/CSS, Octave, SQL and more.</p>
+    <p>When I arrived I introduced myself to everyone and found out that some people were  really advanced and others were beginners. I met a guy named Benjamin who was a beginner like me and we decided to work together. He is the guy sitting next to my right in the picture. I told him about the homework assignment of creating a website for the meetup group and we decided to pair up and work together. The guy directly above Benjamin in the picture is Josh and he is the meetup organizer. He has been doing web development and programming for ten years. I found the group very friendly and helpful. If you get stuck you are more than welcome to ask questions to more advance members and they will be more than happy to help you figure things out. All levels of understanding are welcome. Every one that comes study and work on their own projects. If any one has a question about something they are not understanding can ask a more advance peer.</p>
+</div>     
+<div id="footer">
+    Copyright &copy; 2018 Meetup Project CNIT-132 | <em>Vladimir Parrales</em>
+</div> 
+<!--<p>1. validate your work using W3C validator</p>-->
+</div>
+</body>    
+</html>
