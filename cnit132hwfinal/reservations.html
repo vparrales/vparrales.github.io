@@ -1,41 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!--STEP 19-->
 <title>Pacific Trails Resort Reservations</title>
 <meta charset="utf-8">
-<meta name="description" content="Reserve a yurt today at Pacific Trails Resorts. Good weather and plenty of great ocean views.">
-<meta name="keywords" content=" Kayaking, Hiking, Bird Watching, Ocean Views.">
+<meta name="description" content="Winter Special save 30% on reserving a yurt today! Disconnect from the matrix and reserve a yurt today at Pacific Trails Resorts! Plenty of technology free activities, good weather and astounding ocean views.">
+<meta name="keywords" content=" Winter Specials, 30% off, Relax, Kayaking, Hiking, Bird Watching, Ocean Views.">
 <meta name="viewport" content="width=device-width, intial-scale=1.0">
 <link rel="stylesheet" href="pacific.css">
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
-<link rel="shortcut icon" href="../cnit132/favicon1.ico">
+<!--STEP 18 START-->
+<link rel="shortcut icon" href="cnit132/hwproject/favicon1.ico">
+<!--STEP 18 END-->
+<!--STEP 19 END-->
 </head>
 <body>
 <div id="wrapper">
-<h1 class="center">Pacific Trails Resort Reservations</h1>
-<div id="nav">
+    <div class="one"><h1>Pacific Trails Resort Reservations</h1></div>
+<nav class="two">
 <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="yurts.html">Yurts</a></li>
     <li><a href="activities.html">Activities</a></li>
     <li><a href="reservations.html">Reservations</a></li>
 </ul>
-</div>
-<div id="content">
+</nav>
+<div class="three">
 <h2>Reservations at Pacific Trails</h2>
-<form action="contact.php"> 
-    First Name:<br>
-    <input class="space" type="text" name="firstname"><br>
-    Last Name:<br>
-    <input class="space" type="text" name="lastname"><br>
-    Email Address:<br>
-    <input class="space" type="text" name="email address"><br>
-    Telephone Number:<br>
-    <input class="space" type="text" name="telephone number"><br>
-    Number of Guest:<br>
-    <input class="space" type="text" name="number of guest"><br>
-    <input  class="submit space" type="submit">
-    <input class="reset space" type="reset">
+<form method="post" action="contact.php" title="Reservations at Pacific Trails Resort">
+    
+    <label for="firstname">First Name:</label>
+    <br>
+    <input class="space" type="text" name="firstname" id="firstname" required>
+    <br>
+    
+    <label for="lastname">Last Name:</label>
+    <br>
+    <input class="space" type="text" name="lastname" id="lastname" required>
+    <br>
+    
+    <label for="email">Email Address:</label>
+    <br>
+    <input class="space" type="email" name="email address" id="email" placeholder="email@mail.com" required>
+    <br>
+    
+    <label for="telephone">Telephone Number:</label>
+    <br>
+    <input class="space" type="tel" name="telephone number" id="telephone" maxlength="10"  required>
+    <br>
+    
+    <label for="guest">Number of Guest:</label>
+    <br>
+    <input class="space" type="number" name="number of guest" id="guest" required>
+    <br>
+    <input  class="submit space" type="submit" value="Bon-Voyage">
+    <input class="reset space" type="reset" value="Reset">
+    
+
 </form>
 <div id="footer">
 <p>Copyright &copy; 2018 Pacific Trails Resort<br>
