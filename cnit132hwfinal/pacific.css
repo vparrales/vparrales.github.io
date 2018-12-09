@@ -85,6 +85,11 @@
         font-size: 200%;
         text-align: center;
     }
+
+    h3 {
+            font-family: Georgia, "Times New Roman", serif;
+            color: #000033;
+    }
     
     img {
         display: none;
