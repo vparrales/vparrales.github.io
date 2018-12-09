@@ -26,9 +26,9 @@
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto;
         grid-template-areas: 
-            "one"
-            "two"
-            "three";
+            "header"
+            "main-nav"
+            "main-content";
         width: 100%;
         margin: 0;
         padding: 0;
