@@ -206,8 +206,8 @@
             margin: 0 auto;
             margin-top: 25px;
             grid-template-areas: 
-                "one one"
-                "two three";
+                "header header"
+                "main-nav main-content";
         }
         
         .header {
