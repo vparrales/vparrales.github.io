@@ -35,8 +35,8 @@
         padding-bottom: 0;
     }
     
-    .one {
-        grid-area: one;
+    .header {
+        grid-area: header;
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         color: white;
@@ -44,8 +44,8 @@
         text-align: center;
     }
     
-    .two {
-        grid-area: two;
+    .main-nav {
+        grid-area: main-nav;
         grid-column: 1 / 2;
         grid-row: 2 / 3;
 /*********Step 5**********/
@@ -55,7 +55,7 @@
 /**********Step 5 End*********/
     }
     
-    .two ul {
+    .main-nav ul {
         display:block;
         text-align: center;
         width: auto;
@@ -65,8 +65,8 @@
         list-style-position: inside;
     }
 
-    .three {
-        grid-area: three;
+    .main-content {
+        grid-area: main-content;
         grid-column: 1 / 2;
         grid-row: 3 / 4;
 /**********Step 6**********/
@@ -210,8 +210,8 @@
                 "two three";
         }
         
-        .one {
-            grid-area: one;
+        .header {
+            grid-area: header;
             grid-column: 1 / 3;
             grid-row: 1 / 2;
 /**********Step 4 & 8**********/
@@ -224,8 +224,8 @@
             
         }
         
-        .two {
-            grid-area: two;
+        .main-nav {
+            grid-area: main-nav;
             grid-column: 1 / 2;
             grid-row: 2 / 3;
 /**********Step 5**********/
@@ -236,8 +236,8 @@
             
         }
         
-        .three {
-            grid-area: three;
+        .main-content {
+            grid-area: main-content;
             grid-column: 2 / 3;
             grid-row:  2 / 3;
 /**********Step 6**********/
@@ -254,7 +254,7 @@
         }
         
 
-        #pcoast {
+        #main-img {
 /**********Step 11**********/
             display: block;
 /**********Step 12**********/
@@ -264,7 +264,7 @@
             margin-right: 7px;
         }
         
-        .two ul {
+        .main-nav ul {
             text-align: left;
             font-weight: bolder;
             font-size: 1.2em;
@@ -295,25 +295,3 @@
         }
 /**********Step 14 End**********/
         /******************STYLES FOR DESKTOPS END*******************/
-    
-
-    @keyframes bird {
-    from {
-        left: 0;
-    }
-    
-    to {
-        left: calc(100% - 65px);
-    }
-}
-
-    #bird {
-    animation: bird 5s 1 forwards;
-    position: relative;
-}
- 
-        #bird img {
-            display: block;
-        }
-        
-
