@@ -1,281 +1,158 @@
 /**********CSS for Mobile Devices**********/
-/**********Step 1 EXTERNAL STYLE SHEET**********/
 * {
-        box-sizing: border-box;
+    box-sizing: border-box;
     }
 
-    body {
-        
-/**********Step 2*********/
-        color: darkgray;
-        /*background: green;
-            url(cnit132/background.jpg);*/
-        font-family: Arial, Helvetica, sans-serif;
-/**********Step 2 End**********/
-        
-        background-color: white;
-        margin: 0;
-        padding: 0;
-/*        padding-bottom: 20px;*/
+body {
+    color: darkgray;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
     }
          
 /***************Setting up the Grid*****************/
         
-    #wrapper {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas: 
-            "header"
-            "main-nav"
-            "main-content";
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 0;
+#wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "header"
+        "main-nav"
+        "main-content";
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0;
+    background-color: #90C7E3;
     }
     
-    .header {
-        grid-area: header;
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-        color: white;
-        background-color: #000033;
-        text-align: center;
+.header {
+    grid-area: header;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: white;
+    background-color: #000033;
+    text-align: center;
     }
     
-    .main-nav {
-        grid-area: main-nav;
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-/*********Step 5**********/
-        background-color: skyblue;
-        font-weight: bolder;
-        font-size: 1.2em;
-/**********Step 5 End*********/
-    }
-    
-    .main-nav ul {
-        display:block;
-        text-align: center;
-        width: auto;
-    }
-    
-    ul {
-        list-style-position: inside;
+.main-nav {
+    grid-area: main-nav;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: skyblue;
+    font-weight: bolder;
+    font-size: 1.2em;
     }
 
-    .main-content {
-        grid-area: main-content;
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-/**********Step 6**********/
-        background-color: white;
-/**********Step 6 End**********/
-        padding: 10px;
+.main-content {
+    grid-area: main-content;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    background-color: white;
+    padding: 10px;
+    }
+ 
+/***************Main Navigation for mobile*****************/ 
+
+.main-nav > ul {
+    display:block;
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding-left: 0;
+    margin: 0;
+    width: auto;   
     }
 
-    h2 {
-/**********Step 6**********/
-        color: #3399CC;
-/**********Step 6 End**********/
-/**********Step 16**********/
-        text-shadow: 2px 2px 5px black;
-/**********Step 16 End**********/
-        font-size: 200%;
-        text-align: center;
-    }
-
-    h3 {
-            font-family: Georgia, "Times New Roman", serif;
-            color: #000033;
+a {
+    text-decoration: none;
     }
     
-    img {
-        display: none;
-    }
-
-    /********Header 1 and 2 Styles****************/
-    
-    h1, h2 {
-/**********Step 4**********/
-        font-family: Georgia, "Times New Roman", serif;
-/**********Step 4 End**********/
-    }
-    /********Header 1 and 2 Styles End****************/
-
-
-
-/***************************Navigation Links Styles***************************************/
-/**********Step 17**********/   
-    a {
-        text-decoration: none;
+a:link {
+    color: #000033;
     }
     
-    a:link {
-        color: #000033;
+a:visited {
+    color: #344873;
     }
     
-    a:visited {
-        color: #344873;
+a:hover {
+    color: white;
     }
-    
-    a:hover {
-        color: white;
-    }
-    
-    .main-nav > ul {
-        list-style-type: none;
-        font-size: 1.2em;
-        margin: 0;
-        padding-left: 0;
-        font-weight: bolder;
-        
-    }
-/**********Step 17 End**********/
-/***************************Navigation Links Styles End***************************************/
+      
+/***************Imagine in main-content*****************/
 
-
-  
-    div {
-        overflow: auto;
+#main-img {
+    display: none;
     }
+
+/***************Unodered List in main-content*****************/
+
+ul {
+    list-style-position: inside;
+    }
+
+/***************Heading Styles*****************/
+
+h2 {
+    color: #3399CC;
+    text-shadow: 2px 2px 5px black;
+    font-size: 200%;
+    text-align: center;
+    }
+
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: darkblue;
+    }
+     
+h1, h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    }
+
+/***************First 3 words of paragraph in main-content*****************/
     .resort {
-/**********Step 7**********/
-        color: darkblue;
-        font-weight: bolder;
-/**********Step 7 End**********/
-        font-size: 1.2em;
+    color: darkblue;
+    font-weight: bolder;
+    font-size: 1.2em;
+    }
+
+/***************Address in main-content*****************/
+
+#address {
+    font-size: 90%;    
     }
     
-    #address {
-/**********Step 9**********/
-        font-size: 90%;
-/**********Step 9 End**********/
-        
+/***************Footer in main-content*****************/
+#footer {
+    font-size: 75%;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, sefif;
     }
-    
-    #footer {
-/**********Step 10**********/
-        font-size: 75%;
-        font-style: italic;
-        font-family: Georgia, 'Times New Roman', Times, sefif;
-/**********Step 10 End**********/
-    }
+
+/***************Form Page*****************/
 .space {
-    margin: 5px;
-    
+    margin: 4px;
 }
 
 .submit {
-    width: 140px;
-    height: 40px;
+    width: 120px;
+    height: 25px;
     background-color: deepskyblue;
 }
 
 .reset {
-    width: 140px;
-    height: 40px;
+    width: 120px;
+    height: 25px;
     background-color: tomato;
 }
-    
-    /***************************STYLES FOR DESKTOPS*********************/
-    @media screen and (min-width: 481px) {
-        body {
-/**********Step 2**********/
-            background: white url(../cnit132/background.jpg);
-            font-family: Arial, Helvetica, sans-serif;
-            color: darkgray;
-/**********Step 2 Done**********/
-            
-            text-align: left;
-     }
-      
 
-        #wrapper {
-            display: grid;
-            grid-template-columns: 150px auto;
-            grid-template-rows: auto auto;
-/**********Step 3**********/
-            width: 98%;
-            max-width: 960px;
-/**********Step 3 End**********/
-/**********Step 15**********/
-            box-shadow: 7px 7px 10px grey;
-/**********Step 15 End**********/
-            margin: 0 auto;
-            margin-top: 25px;
-            grid-template-areas: 
-                "header header"
-                "main-nav main-content";
-        }
-        
-        .header {
-            grid-area: header;
-            grid-column: 1 / 3;
-            grid-row: 1 / 2;
-/**********Step 4 & 8**********/
-            background: #000033 url(../cnit132/sunset.jpg) no-repeat right;
-            color: white;
-/**********Step 4 & 8 End**********/
-            text-align: left;
-            padding-left: 5px;
-            height: 72px;
-            
-        }
-        
-        .main-nav {
-            grid-area: main-nav;
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-/**********Step 5**********/
-            background-color: skyblue;
-            font-weight: bolder;
-            font-size: 1.2em;
-/**********Step 5 End**********/
-            
-        }
-        
-        .main-content {
-            grid-area: main-content;
-            grid-column: 2 / 3;
-            grid-row:  2 / 3;
-/**********Step 6**********/
-            background-color: white;
-/**********Step 6 End**********/
-        }
-        
-        h2 {
-            text-align: left;
-    }
-        h3 {
-            font-family: Georgia, "Times New Roman", serif;
-            color: #000033;
-        }
-        
-
-        #main-img {
-/**********Step 11**********/
-            display: block;
-/**********Step 12**********/
-            float: left;
-/**********Step 12 End**********/
-/**********Step 11 End**********/
-            margin-right: 7px;
-        }
-        
-        .main-nav ul {
-            text-align: left;
-            font-weight: bolder;
-            font-size: 1.2em;
-            padding: 3px;
-        }
-        
-        div {
-            overflow: hidden;
-        }
- /**********Step 14**********/       
-        @keyframes bird {
+/***************Bird Animation*****************/
+ @keyframes bird {
     from {
         left: 0;
     }
@@ -286,12 +163,74 @@
 }
 
     #bird {
-    animation: bird 5s 1 forwards;
-    position: relative;
+        animation: bird 5s 1 forwards;
+        position: relative;
 }
- 
-        #bird img {
-            display: block;
+
+div {
+    overflow: auto;
+}
+/***************************STYLES FOR DESKTOPS*************************************/
+
+@media screen and (min-width: 481px) {
+    body {
+        background: white url(../cnit132/background.jpg);
+     }
+/***************Setting up the grid for DESKTOPS*****************/      
+#wrapper {
+        display: grid;
+        grid-template-columns: 150px auto;
+        grid-template-rows: auto auto;
+        width: 98%;
+        max-width: 960px;
+        box-shadow: 7px 7px 10px grey;
+        margin: 0 auto;
+        margin-top: 25px;
+        background-color: #90C7E3;
+        grid-template-areas: 
+            "header header"
+            "main-nav main-content";
         }
-/**********Step 14 End**********/
-        /******************STYLES FOR DESKTOPS END*******************/
+        
+.header {
+        grid-area: header;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        background: #000033 url(../cnit132/sunset.jpg) no-repeat right;
+        color: white;
+        text-align: left;
+        padding-left: 5px;
+        height: 72px; 
+        }
+        
+.main-nav {
+        grid-area: main-nav;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        background-color: skyblue;
+        }
+        
+.main-content {
+        grid-area: main-content;
+        grid-column: 2 / 3;
+        grid-row:  2 / 3;
+        background-color: white;
+        }
+    
+/***************main-nav for DESKTOPS*****************/
+.main-nav ul {
+        text-align: left;
+        padding: 2px;
+        }
+    
+/***************Heading 2 for DESKTOPS*****************/
+h2 {
+        text-align: left;
+        }
+        
+/***************Main image for DESKTOPS*****************/
+#main-img {
+        display: block;
+        float: left;
+        margin-right: 7px;
+        }
