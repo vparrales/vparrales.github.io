@@ -126,6 +126,9 @@ h1, h2 {
 #address {
     font-size: 90%;    
     }
+.contact {
+    clear: both;
+    }
     
 /***************Footer in main-content*****************/
 #footer {
