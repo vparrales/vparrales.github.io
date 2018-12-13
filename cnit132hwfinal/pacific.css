@@ -236,7 +236,9 @@ h2 {
         display: block;
         float: left;
         margin-right: 7px;
-        }
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 /***************Styles for PRINTERS*****************/
