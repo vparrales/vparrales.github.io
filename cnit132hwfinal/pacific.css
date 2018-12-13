@@ -238,3 +238,20 @@ h2 {
         margin-right: 7px;
         }
 }
+
+/***************Media Query for print*****************/
+
+@ media print {
+    .header {
+        background-color: none;
+        color: black;
+    }
+    
+    .main-nav {
+        background-color: none;
+    }
+    .main-nav ul li {
+        color: black;
+    }
+    
+}
