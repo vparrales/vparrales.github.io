@@ -158,7 +158,6 @@
          grid-column: 1 / 5;
          grid-row: 4 / 5;
          text-align: center;
-         padding-bottom: 500px;
      }
           nav li {
          float: left;
@@ -173,25 +172,21 @@
              display: block;
          }
         }
-
-@ media print {
+/***************Styles for PRINTERS*****************/
+@media print {
        body {
-                 background-color: none;
+             background-color: none;
           }
-          
        img {
-                 display: none;
+             display: none;
           }
           
        nav {
-                 background-color: none;
+             display: none;
           }
           
        a {
-                 color: black;
-          }
-       #footer {
-                 padding-bottom: 0;
+             color: black;
           }           
 }
      
