@@ -175,7 +175,7 @@
 /***************Styles for PRINTERS*****************/
 @media print {
        body {
-             background-color: none;
+             background-color: white;
           }
        img {
              display: none;
