@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="javaScript, CCSF, Introduction, HTML, CSS">
+	<meta name="description" content="Here are some javaScript assignments that I created in CNIT-133 javaScript class at CCSF.">
+	<meta name="author" content="Vladimir Parrales">
+	<link rel="stylesheet" href="cnit133.css">
+	<link rel="shortcut icon" href="javascript_icon.ico">
+	<title>CNIT-133 javaScript</title>
+</head>
+<body>
+	<div id="wrapper">
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Projects</a></li>
+				<li class="right"><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<header>
+			<h1>CNIT 133 Homework</h1>
+		</header>
+		<main>	
+		<p class="vladinfo">Hello I'm Vlad and I live in San Francisco. I’m an aspiring web designer who is trying to understand everything about the web. I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
+
+		<ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <p class="vladinfo">I’d like to work as a web designer independently and help clients create an impressive online presence. Below are links to javaScript projects I did for the CNIT-133 javaScript course I took a CCSF.</p>
+			<ol>
+			<li><a href="">Basic Operators</a></li>
+			<li><a href="">Functions</a></li>
+			<li><a href="">Looping Statements</a></li>
+			<li><a href="">Arrays</a></li>
+			<li><a href="">Objects</a></li>
+			<li><a href="">DOM and jQuery</a></li>
+			<li><a href="">Ajax Applications</a></li>
+		</ol>
+		</main>
+		<footer>
+			<ul>
+				<li><a href="#" class="social github">Github</a></li>
+      			<li><a href="#" class="social linkedin">LinkedIn</a></li>
+   			 </ul>
+			<p>Copyright &copy; 2019 javaScript CNIT&dash;133 &verbar; <em>Vladimir Parrales</em></p>
+		</footer>
+	</div>
+	
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
