@@ -223,3 +223,28 @@ ul.skills {
 .skills li:nth-child(odd) {
   background: teal;
 }
+
+
+@keyframes comingsoon {
+  from {
+      background-color: purple;
+      left: 0;
+    }
+  to {
+      background-color: orangered;
+      left: calc(100% - 420px);
+    }
+}
+
+#comingsoon {
+    width: 400px;
+    height: auto;
+    animation: comingsoon 10s infinite alternate;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    font-family: cursive;
+    border-radius: 4%;
+    margin-top: 50px;
+}
