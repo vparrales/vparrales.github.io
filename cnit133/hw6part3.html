@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="javaScript, Objects">
+	<meta name="description" content="In javaScript objects are variables too. But objects can contain many values.">
+	<meta name="author" content="Vladimir Parrales">
+	<link rel="stylesheet" href="cnit133.css">
+	<link rel="shortcut icon" href="javascript_icon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/jquery-input-mask-phone-number@1.0.11/dist/jquery-input-mask-phone-number.js"></script>
+  <script src="https://rawgit.com/digitalBush/jquery.maskedinput/1.4.1/dist/jquery.maskedinput.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+  <script src="hw6part3.2.js"></script>
+	<title>Objects</title>
+</head>
+<body>
+<div id="wrapper">
+ <nav>
+  <ul>
+  	<!-- <li><a href="index.html">Home</a></li> -->
+   <li><a href="hw6part1.html">Part 1</a></li>
+   <li><a href="hw6part2.html">Part 2</a></li>
+   <li class="right"><a href="hw6.html">Home</a></li>
+   <!-- <li><a href="#">Part 4</a></li> -->
+   <!-- <li class="right"><a href="#">Extra Credit</a></li> -->
+  </ul>
+</nav>
+<header>
+ <h1> CNIT 133 Homework 6 &dash; Objects</h1>
+</header>
+<main>
+<h4>Part 3&colon;</h4>
+<p class="vladinfo">
+Create a webpage that does the following&colon;
+</p>
+<p class="vladinfo">
+1. Using toString(), toLocaleString() and toUTCString() for the Date object, write the current date and time in these 3 formats. Using the getTimezoneOffset(), write the hours difference between PST or PDT (Pacific Standard Time or Pacific Daylight Time) and UTC, and the hours difference between EST or EDT (Eastern Standard Time or Eastern Daylight Time) and UTC. Note: EST is 3 hours ahead of PST (Pacific Standard Time). Here is a helpful link for the <a href="https://www.w3schools.com/jsref/jsref_obj_date.asp" target="_blank" rel="noopener">Date Object</a> (Links to an external site.)Links to an external site.. Note that for EDT (Eastern Daylight Time), the hours difference between EDT and UTC changes by one hour.
+</p>
+<fieldset>
+  <legend>Date Objects&colon;</legend>
+    <script src="hw6part3.1.js"></script>
+</fieldset>
+<p class="vladinfo">
+2. Input a telephone number as a string in the format (999) 999-9999. The script should use String method split to extract the area code as a token, the first 3 digits of the phone number as a token, and the last 4 digits of the phone number as a token. Display the area code in one text field and the seven-digit phone number in another text field. Make sure that when the user is typing the phone number it will automatically put the phone number in the (999) 999-9999 format - I suggest that you use the jQuery mask for input. 
+</p>
+<fieldset>
+  <legend>Telephone as a String&colon;</legend>
+<form id="phoneNumber">
+  Input a telephone number in the format of (415) 666-1111.
+  <input type="text" id="phone" size="13" autofocus>
+  <input type="button" value="Extract Number" onclick="extractNumber()">
+  <input type="reset" value="Reset" onclick="window.location.reload();">
+  <br>
+  Area Code&colon;
+  <input type="text" id="areaCode" size="3" readonly>
+  <br>
+  Seven-digit phone number&colon;
+  <input type="text" id="sevenDigitNumber" size="13" readonly>
+</form>
+</fieldset>
+<p class="vladinfo">
+More information about how to use <a href="https://dobsondev.com/2017/04/14/using-jquery-mask-to-mask-form-input/" target="_blank" rel="noopener">jQuery mask</a>
+</p>
+</main>
+ <footer>
+   <ul>
+    <li><a href="https://github.com/vparrales" target="_blank" rel="noopener" class="social github">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/vladimir-parrales" target="_blank" rel="noopener" class="social linkedin">LinkedIn</a></li>
+   </ul>
+    <p>Copyright &copy; 2019 javaScript CNIT&dash;133 &verbar; <em>Vladimir Parrales</em></p>
+  </footer>
+</div>
+</body>
+</html>

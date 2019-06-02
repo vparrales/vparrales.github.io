@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="javaScript, Ajax Applications">
+	<meta name="description" content="Ajax is a set of Web development techniques using many web technologies on the client side to create asynchronous Web applications. With Ajax, web applications can send and retrieve data from a server asynchronously without interfering with the display and behavior of the existing page.">
+	<meta name="author" content="Vladimir Parrales">
+	<link rel="stylesheet" href="cnit133.css">
+	<link rel="shortcut icon" href="javascript_icon.ico">
+	<title>Ajax Applications</title>
+	<script>
+function showHint(str) {
+    if (str.length == 0) { 
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        }
+        xmlhttp.open("GET", "gethint.php?q="+str, true);
+        xmlhttp.send();
+    }
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+ <nav>
+  <ul>
+  	<li><a href="index.html">Home</a></li>
+   <!-- <li><a href="#">Part 1</a></li> -->
+   <!-- <li><a href="#">Part 2</a></li>
+   <li><a href="#">Part 3</a></li>
+   <li><a href="#">Part 4</a></li> -->
+   <!-- <li class="right"><a href="#">Extra Credit</a></li> -->
+  </ul>
+</nav>
+<header>
+ <h1> CNIT 133 Homework 8 &dash; Ajax Applications</h1>
+</header>
+<main>
+<p><b>Start typing a name in the input field below:</b></p>
+<form> 
+First name: <input type="text" onkeyup="showHint(this.value)" autofocus>
+</form>
+<p>Suggestions: <span id="txtHint"></span></p>
+</main>
+ <footer>
+   <ul>
+    <li><a href="https://github.com/vparrales" target="_blank" rel="noopener" class="social github">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/vladimir-parrales" target="_blank" rel="noopener" class="social linkedin">LinkedIn</a></li>
+   </ul>
+    <p>Copyright &copy; 2019 javaScript CNIT&dash;133 &verbar; <em>Vladimir Parrales</em></p>
+  </footer>
+</div>
+</body>
+</html>

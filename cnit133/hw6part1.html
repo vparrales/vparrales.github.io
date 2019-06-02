@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="javaScript, Objects">
+	<meta name="description" content="In javaScript objects are variables too. But objects can contain many values.">
+	<meta name="author" content="Vladimir Parrales">
+	<link rel="stylesheet" href="cnit133.css">
+	<link rel="shortcut icon" href="javascript_icon.ico">
+	<title>Objects</title>
+  <script src="hw6part1.js"></script>
+  <style>
+    #errorMessage {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<div id="wrapper">
+ <nav>
+  <ul>
+  	<!-- <li><a href="index.html">Home</a></li> -->
+   <li><a href="hw6.html">Home</a></li>
+   <li><a href="hw6part2.html">Part 2</a></li>
+   <li class="right"><a href="hw6part3.html">Part 3</a></li>
+   <!-- <li><a href="#">Part 4</a></li> -->
+   <!-- <li class="right"><a href="#">Extra Credit</a></li> -->
+  </ul>
+</nav>
+<header>
+ <h1> CNIT 133 Homework 6 &dash; Objects</h1>
+</header>
+<main>
+<h4>Part 1&colon;</h4>
+<p class="vladinfo">
+Create a webpage that contains a script that has  a function that uses Math.round, Math.sqrt and Math.floor, toFixed() to obtain the following:
+a) round the floating-point number to the nearest integer
+b) calculate the square root of the floating-point number and round it to an integer
+c) round the floating-point number to the nearest tenths position
+d) round the floating-point number to the nearest hunderdths position
+e) round the floating-point number to the nearest thousandths position
+</p>
+<p class="vladinfo">
+Your page should require the user to enter a floating-point number with AT LEAST 4 decimal positions (no less than that).
+</p>
+<p class="vladinfo">
+Your script should display the original floating-point number, the number rounded to the nearest integer, the square root of the number that is then rounded to an integer, the number rounded to the nearest tenth, the number rounded to the nearest hundredth, and the number rounded to the nearest thousandth.
+</p>
+<p class="vladinfo">
+Be sure to use parseFloat() for the inputted number. Use a form input box that the user will use to input and a textarea to display the output.
+</p>
+<p class="vladinfo">
+When displaying the output, depending on which method you chose, be sure to use toFixed() for displaying the number to the nearest tenths, hundredths, and thousandths positions (just in case you decided to use Math.floor and Math.round for some of the requests for this part). Validate the input and display an error message if the input is invalid. It is acceptable to use jQuery for this problem.
+</p>
+
+<form name="mathForm">
+<h4>Enter a number with at LEAST four decimal positions&colon;</h4>
+<div id="errorMessage"></div>
+<input type="number" name="decimalNumber" id="decimalNumber" size="20" autofocus>
+<input type="button" value="Round Number" onclick="mathRoundNumber()">
+<input type="reset" value="Reset" onclick="resetForm();">
+<br>
+<textarea name="decimalNumberOutput" rows="8" cols="60" readonly placeholder="Results from your input will display here!"></textarea>
+</form>
+</main>
+ <footer>
+   <ul>
+    <li><a href="https://github.com/vparrales" target="_blank" rel="noopener" class="social github">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/vladimir-parrales" target="_blank" rel="noopener" class="social linkedin">LinkedIn</a></li>
+   </ul>
+    <p>Copyright &copy; 2019 javaScript CNIT&dash;133 &verbar; <em>Vladimir Parrales</em></p>
+  </footer>
+</div>
+</body>
+</html>

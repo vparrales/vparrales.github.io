@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="javaScript, Arrays">
+	<meta name="description" content="An array in javaScript is a special variable which can hold more than one value at a time.">
+	<meta name="author" content="Vladimir Parrales">
+	<link rel="stylesheet" href="cnit133.css">
+	<link rel="shortcut icon" href="javascript_icon.ico">
+	<title>Arrays</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="hw5part1.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+  <style>
+    td {
+      text-align: left;
+      /*border: solid black 1px;*/
+    }
+  </style>
+</head>
+<body>
+<div id="wrapper">
+ <nav>
+  <ul>
+  	<!-- <li><a href="index.html">Home</a></li> -->
+   <li><a href="hw5.html">Home</a></li>
+   <li><a href="hw5part2.html">Part 2</a></li>
+   <li class="right"><a href="hw5part3.html">Part 3</a></li>
+   <!-- <li><a href="#">Part 4</a></li> -->
+   <!-- <li class="right"><a href="#">Extra Credit</a></li> -->
+  </ul>
+</nav>
+<header>
+ <h1> CNIT 133 Homework 5 &dash; Arrays</h1>
+</header>
+<main>
+<p class="vladinfo">
+Create a webpage containing a form that displays an input text box, radio buttons, checkboxes, and select items; along with a script that executes form validation.
+
+Your script should validate whether the user has entered data in the input text box, has checked a radio button, has checked at least one checkbox, and has selected an option from the select items.
+
+Use a submit button to invoke the validation script, so that the form is processed only when the form fields are valid. If a field is invalid then display a message to the user. In your form statement, use method="post" and an action that can be a mailto or a webpage(displaying that the form has been processed), but be sure to use input type="submit" for your submit button. Alternatively you can leave out the form's action and method, but then you should use an input type="button", along with displaying any appropriate messages. 
+</p>
+<form action="formprocessed.html" method="post" id="myform" name="myform">
+  <table>
+    <tr>
+      <td>Name&colon;</td>
+      <td><input type="text" name="name" id="name" size="30" required autofocus placeholder="Please enter full name"></td>
+    </tr>
+    <tr>
+      <td>Favorite TV Series&colon;</td>
+      <td>Breaking Bad<input type="radio" name="TvSeries" id="showOne" required value="Breaking Bad">Game of Thrones<input type="radio" name="TvSeries" id="showTwo" value="Game of Thrones">
+      House of Cards<input type="radio" name="TvSeries" id="showThree" value="House of Cards">
+      </td>
+    </tr>
+    <tr>
+      <td>Favorite Fruit&colon;</td>
+      <td>Mango<input type="checkbox" name="faveFruit" id="fruitOne" value="Mango" required>
+      Pineapple<input type="checkbox" name="faveFruit" id="fruitTwo" value="Pineapple"> 
+      Watermelon<input type="checkbox" name="faveFruit" id="fruitThree" value="Watermelon">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="options">Computer Language&colon;</label>
+      </td>
+      <td>
+        <select name="options" id="options" required>
+          <option value="">Choose a language&colon;</option>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javaScript">javaScript</option>
+          <option value="python">Python</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="submit" id="buttonSubmit" value="Submit"></td>
+      <td><input type="reset" value="Reset" onclick="location.reload()"></td>
+    </tr>
+  </table>
+</form>
+</main>
+ <footer>
+   <ul>
+    <li><a href="https://github.com/vparrales" target="_blank" rel="noopener" class="social github">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/vladimir-parrales" target="_blank" rel="noopener" class="social linkedin">LinkedIn</a></li>
+   </ul>
+    <p>Copyright &copy; 2019 javaScript CNIT&dash;133 &verbar; <em>Vladimir Parrales</em></p>
+  </footer>
+</div>
+</body>
+</html>

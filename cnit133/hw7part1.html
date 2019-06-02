@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="javaScript, DOM, jQuery">
+	<meta name="description" content="jQuery DOM Manipulation. One very important part of jQuery is the possibility to manipulate the DOM. jQuery comes with a bunch of DOM related methods that make it easy to access and manipulate elements and attributes. DOM = Document Object Model.">
+	<meta name="author" content="Vladimir Parrales">
+	<link rel="stylesheet" href="cnit133.css">
+	<link rel="shortcut icon" href="javascript_icon.ico">
+	<title>DOM and jQuery</title>
+  <style>
+
+/*homework 7 part 1*/
+/*javaScript background class names*/
+.backgroundColorYellow {
+  background-color: #ffff00;
+}
+
+.backgroundColorTomato {
+  background-color: #ff6347;
+}
+
+.backgroundColorLimeGreen {
+  background-color: #32cd32;
+}
+
+/*javaScript font size class names*/
+
+.smallFontSize {
+  font-size: 8px;
+}
+
+.mediumFontSize {
+  font-size: 18px;
+}
+
+.largeFontSize {
+  font-size: 22px;
+}
+
+/*javaScript font familia class names*/
+
+.fontFamiliaTimesNewRoman {
+  font-family: "Times New Roman", monospace;
+}
+
+.fontFamiliaCourier {
+  font-family: "Courier", sans-serif;
+}
+
+.normalFontFamilia {
+  font-family: 'Lato', sans-serif;
+}
+
+/*javaScript font style class names*/
+
+.italicFontStyle {
+  font-style: italic;
+}
+
+.normalFontStyle {
+  font-style: normal;
+}
+
+/*javaScript font weight class names*/
+
+.fontWeightBolder {
+  font-weight: bolder;
+}
+
+.lightFontWeight {
+  font-weight: 100;
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+ <nav>
+  <ul>
+  	<!-- <li><a href="index.html">Home</a></li> -->
+   <li><a href="hw7.html">Home</a></li>
+   <li><a href="hw7part2.html">Part 2</a></li>
+   <li class="right"><a href="hw7part3.html">Part 3</a></li>
+   <!-- <li><a href="#">Part 4</a></li> -->
+   <!-- <li class="right"><a href="#">Extra Credit</a></li> -->
+  </ul>
+</nav>
+<header>
+ <h1> CNIT 133 Homework 7 &dash; DOM and jQuery</h1>
+</header>
+<main>
+<p class="vladinfo">
+Part 1: 
+Create a webpage in which users are allowed to select a page layout and formatting through the use of the className property. Choose at least three form elements from among radio buttons, select items, checkboxes, and buttons to allow the user to change the background color, font size, font family, font style, and font weight. You may use JavaScript or jQuery for this. 
+</p>
+<h3>Edit the page to your liking with the options below&colon;</h3>
+<!-- Radio Buttons Background Style -->
+<div id="changeBackgroundColor">
+  <label>Background Color&colon;</label><br>
+  <label><input type="radio" name="color" value="yellow">Yellow</label>
+  <label><input type="radio" name="color" value="tomato">Tomato</label>
+  <label><input type="radio" name="color" value="limegreen">Green</label>
+</div>
+<!--Buttons Font Size-->
+<h3>Change the font-size of your page</h3>
+<div id="fontSize"> 
+  <button>Small</button>
+  <button>Medium</button>
+  <button>Large</button>
+</div>
+
+<!-- Font Family -->
+<h3>Font Family&colon;</h3>
+<div id="fontFamilia">
+  <select>
+    <option value="fontOption">Font Option&colon;</option>
+    <option value="times new roman">Times New Roman</option>
+    <option value="courier">Courier</option>
+  </select>
+</div>
+
+<!-- Font Style -->
+<h3>Font Style&colon;</h3>
+<div id="fontStyle">
+  <button>Italic</button>
+  <button>Normal</button>
+</div>
+
+<!-- Font Weight -->
+<h3>Font Weight&colon;</h3>
+<div id="fontWeight">
+  <button>Bolder</button>
+  <button>100</button>
+</div>
+</main>
+ <footer>
+   <ul>
+    <li><a href="https://github.com/vparrales" target="_blank" rel="noopener" class="social github">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/vladimir-parrales" target="_blank" rel="noopener" class="social linkedin">LinkedIn</a></li>
+   </ul>
+    <p>Copyright &copy; 2019 javaScript CNIT&dash;133 &verbar; <em>Vladimir Parrales</em></p>
+  </footer>
+</div>
+ <script src="hw7part1.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="javaScript, DOM, jQuery">
+	<meta name="description" content="jQuery DOM Manipulation. One very important part of jQuery is the possibility to manipulate the DOM. jQuery comes with a bunch of DOM related methods that make it easy to access and manipulate elements and attributes. DOM = Document Object Model.">
+	<meta name="author" content="Vladimir Parrales">
+	<link rel="stylesheet" href="cnit133.css">
+	<link rel="shortcut icon" href="javascript_icon.ico">
+	<title>DOM and jQuery</title>
+  <!-- Add jQuery library -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+  <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+  <script src="hw7part3.js">
+  </script>
+</head>
+<body>
+<div id="wrapper">
+ <nav>
+  <ul>
+  	<!-- <li><a href="index.html">Home</a></li> -->
+   <li><a href="hw7part1.html">Part 1</a></li>
+   <li><a href="hw7part2.html">Part 2</a></li>
+   <li class="right"><a href="hw7.html">Home</a></li>
+   <!-- <li><a href="#">Part 4</a></li> -->
+   <!-- <li class="right"><a href="#">Extra Credit</a></li> -->
+  </ul>
+</nav>
+<header>
+ <h1> CNIT 133 Homework 7 &dash; DOM and jQuery</h1>
+</header>
+<main>
+<p class="vladinfo">
+Part 3:
+Create a photo slide-show using jQuery. For an explanation of the Advanced Gallery with jQuery FancyBox see <a href="http://fancybox.net/howto" target="_blank" rel="noopener">FancyBox</a> But pay attention as this is the older version and a newer version can be found <a href="http://fancyapps.com/fancybox/3/" target= "_blank" rel="noopener">here</a> The following tutorial is helpful for creating the slide-show with <a href="https://www.youtube.com/watch?v=Tb3bralqYJY" target="_blank" rel="noopener">Fancybox3</a>
+</p>
+<h2 style="text-align: center;">Maui and Australian Beaches</h2>
+<a class="fancybox" href="fancy-img/blacksand1.jpeg" data-fancybox-group="gallery" title="Black Sand Beach Hana Maui">
+  <img src="fancy-img/blacksand1.jpeg" width="300" height="300" alt="Black Sand Beach Maui">
+</a>
+<a class="fancybox" href="fancy-img/champagne.jpeg" data-fancybox-group="gallery" title="WhitSunday Islands &commat; Champange Beach Australia">
+  <img src="fancy-img/champagne.jpeg" width="300" height="300" alt="Champange Beach Airlie Australia">
+</a>
+<a class="fancybox" href="fancy-img/noosaheads.jpeg" data-fancybox-group="gallery" title="Noosa Heads Beach Australia">
+  <img src="fancy-img/noosaheads.jpeg" width="300" height="300" alt="Noosa Heads Australia">
+</a>
+<a class="fancybox" href="fancy-img/champagneoutlook.jpeg" data-fancybox-group="gallery" title="WhitSunday Islands Outlook">
+  <img src="fancy-img/champagneoutlook.jpeg" width="300" height="300" alt="WhitSunday Islands Outlook">
+</a>
+<a class="fancybox" href="fancy-img/champangebeach.jpeg" data-fancybox-group="gallery" title="Arriving &commat; Champange Beach">
+  <img src="fancy-img/champangebeach.jpeg" width="300" height="300" alt="Champange Beach">
+</a>
+<a class="fancybox" href="fancy-img/rainbowlorikeet.jpeg" data-fancybox-group="gallery" title="Rainbow Lorikeet &commat; Coogee Beach Australia">
+  <img src="fancy-img/rainbowlorikeet.jpeg" width="300" height="300" alt="Rainbow Lorikeet &commat; Coogee Beach">
+</a>
+</main>
+ <footer>
+   <ul>
+    <li><a href="https://github.com/vparrales" target="_blank" rel="noopener" class="social github">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/vladimir-parrales" target="_blank" rel="noopener" class="social linkedin">LinkedIn</a></li>
+   </ul>
+    <p>Copyright &copy; 2019 javaScript CNIT&dash;133 &verbar; <em>Vladimir Parrales</em></p>
+  </footer>
+</div>
+</body>
+</html>

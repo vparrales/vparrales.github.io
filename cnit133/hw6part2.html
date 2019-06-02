@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="javaScript, Objects">
+	<meta name="description" content="In javaScript objects are variables too. But objects can contain many values.">
+	<meta name="author" content="Vladimir Parrales">
+	<link rel="stylesheet" href="cnit133.css">
+	<link rel="shortcut icon" href="javascript_icon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="hw6part2.js"></script>
+	<title>Objects</title>
+</head>
+<body>
+<div id="wrapper">
+ <nav>
+  <ul>
+  	<!-- <li><a href="index.html">Home</a></li> -->
+   <li><a href="hw6part1.html">Part 1</a></li>
+   <li><a href="hw6.html">Home</a></li>
+   <li class="right"><a href="hw6part3.html">Part 3</a></li>
+   <!-- <li><a href="#">Part 4</a></li> -->
+   <!-- <li class="right"><a href="#">Extra Credit</a></li> -->
+  </ul>
+</nav>
+<header>
+ <h1> CNIT 133 Homework 6 &dash; Objects</h1>
+</header>
+<main>
+<h4>Part 2&colon;</h4>
+<p class="vladinfo">
+Create a webpage that contains a script using a form that allows the user to input several lines of text and a search character and uses the String method charAt to determine the number of occurrences of the search character within the text. Use a form textarea for the text and a form input box for the search character. If the search character is found within the text, display the number of occurrences of the search character in another input box or a textarea (of course, those should be disabled for users to type anything). If the search character is not found within the text then display within a new window (using the window.open() method), the message, 'Search character not found in text string!' along with the search character - make sure that the output input box (or textarea) would be cleared if that error message is showing. Your new window should be a width of 300 pixels, height of 100 pixels, and should not obscure any of the main content already on the page.
+</p>
+<label>Enter text below&colon;</label>
+<form id="input">
+  <textarea cols="40" rows="5" id="textInput" placeholder="Write a few sentences&period;" autofocus></textarea>
+  <br>
+  <textarea cols="40" rows="5" id="outputResults" readonly placeholder="Results"></textarea>
+  <br>
+   <input type="text" name="search" id="search" placeholder="Search Character">
+  <input type="button" value="Search" onclick="searchInput();">
+  <input type="reset" value="Reset" onclick="window.location.reload();">
+</form>
+</main>
+ <footer>
+   <ul>
+    <li><a href="https://github.com/vparrales" target="_blank" rel="noopener" class="social github">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/vladimir-parrales" target="_blank" rel="noopener" class="social linkedin">LinkedIn</a></li>
+   </ul>
+    <p>Copyright &copy; 2019 javaScript CNIT&dash;133 &verbar; <em>Vladimir Parrales</em></p>
+  </footer>
+</div>
+</body>
+</html>
