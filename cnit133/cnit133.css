@@ -171,13 +171,18 @@ a.social:hover {
  margin: 0 auto;
  /*grid-gap: 10px;*/
  grid-template-areas: 
-	 "nav nav nav nav nav"
+	 "nav nav nav nav"
 	 "header header header header"
 	 " main main main main"
 	 "footer footer footer footer";
 }
 
 /*MAIN NAVIGATION FOR DESKTOPS*/
+
+/*nav {
+ grid-area: nav;
+ width: 100%;
+}*/
 
 nav li {
  float: left;
@@ -192,13 +197,20 @@ nav ul li.right {
 
 nav li:last-child {
  float: none;
+ /*float: right;*/
  display: block;
 }
 	
 /*PARAGRAPH STYLE*/
-.vladinfo{
+
+.vladinfo {
  border-left: 1px solid #bbb;
  padding-left: 5px;
+ }
+
+ .textleft {
+ 	text-align: left;
+ 	padding-left: 20px;
  }
 }
 
@@ -221,6 +233,7 @@ ul.skills {
 .skills li:nth-child(odd) {
   background: teal;
 }
+
 
 /*COMING SOON ANIMATION*/
 
@@ -247,3 +260,216 @@ ul.skills {
     border-radius: 4%;
     margin-top: 50px;
 }
+
+ .border {
+	border-collapse: collapse;
+	border: solid black 1px;
+}
+
+.border1 {
+	border: dotted black 1px;
+	border-collapse: collapse;
+}
+
+.center {
+	text-align: center;
+}
+
+.textleft {
+	text-align: left;
+}
+
+tbody {
+	text-align: right;
+}
+
+thead {
+	border-top: solid black 1px;
+	border-right: solid black 1px;
+	border-left: solid black 1px;
+}
+
+tfoot {
+	border: dotted black 1px;
+	border-top: dotted black 1px;
+}
+
+/*Hide Show Panel*/
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #f7fcfc;
+  /*#d1d1e3;*/
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+.rtext {
+	text-align: right;
+}
+
+fieldset {
+	background-color: #f0f9fa;
+	/*#e7ffff;*/
+}
+
+.temp[type=number] {
+  width: 110%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #ffffe7;
+  /*color: white;*/
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.results[type=number] {
+  width: 110%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  /*background-color: #ffffa2;*/
+  /*color: white;*/
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+.cButton {
+	background-color: #87ceeb;
+	color: white;
+	border-radius: 5%;
+	padding: 10px 20px;
+  margin: 8px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.fButton {
+	background-color: #ffa02e;
+	color: white;
+	border-radius: 5%;
+	padding: 10px 20px;
+  margin: 8px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.reset {
+	/*background-color: #ffa02e;*/
+	/*color: white;*/
+	border-radius: 5%;
+	padding: 10px 20px;
+  margin: 8px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.ballDiv {
+		position: absolute;
+		background: tomato;
+		border-radius: 100%;
+		border: solid black 1px;
+		width: 100px;
+		height: 100px;
+		/*left: 200px;*/
+		/*top: 200px;*/
+		text-align: center;
+		/*transition: left top 1s linear ease;*/
+	}
+
+.balltext {
+	padding-top: 10px;
+}
+/*.part3 {
+	max-width: 100%;
+	margin: auto;
+}*/
+
+.part1a {
+	border: dashed black 3px;
+	text-align: right;
+	padding-right: 8px;
+	margin-bottom: 10px;
+}
+
+.part1b {
+	border: dashed black 3px;
+	text-align: left;
+	padding-left: 8px;
+	margin-bottom: 10px;
+}
+	
+/*homework 7 part 1*/
+/*javaScript background class names*/
+.backgroundColorYellow {
+	background-color: #ffff00;
+}
+
+.backgroundColorTomato {
+	background-color: #ff6347;
+}
+
+.backgroundColorLimeGreen {
+	background-color: #32cd32;
+}
+
+/*javaScript font size class names*/
+
+.smallFontSize {
+	font-size: 8px;
+}
+
+.mediumFontSize {
+	font-size: 18px;
+}
+
+.largeFontSize {
+	font-size: 22px;
+}
+
+/*javaScript font familia class names*/
+
+.fontFamiliaTimesNewRoman {
+	font-family: "Times New Roman", monospace;
+}
+
+.fontFamiliaCourier {
+	font-family: "Courier", sans-serif;
+}
+
+.normalFontFamilia {
+	font-family: 'Lato', sans-serif;
+}
+
+/*javaScript font style class names*/
+
+.italicFontStyle {
+	font-style: italic;
+}
+
+.normalFontStyle {
+	font-style: normal;
+}
+
+/*javaScript font weight class names*/
+
+.fontWeightBolder {
+	font-weight: bolder;
+}
+
+.lightFontWeight {
+	font-weight: 100;
+}
+
+
+
+

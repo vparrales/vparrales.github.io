@@ -1,0 +1,8 @@
+document.write("<table style= 'border: 1px solid black;'> <tr>" + "<th style='border: 1px solid black;'>Number</th><th style='border: 1px solid black;'>Square</th>" + "<th style='border: 1px solid black;'>Cube</th></tr>");
+document.write("<tr> <td style='border: 1px solid black;'>" + 1 + "</td>" + "<td style='border: 1px solid black;'>" + Math.pow(1,2) + "</td>" + "</td>" + "<td style='border: 1px solid black;'>" + Math.pow(1,3) + "</td></tr>");
+document.write("<tr> <td style='border: 1px solid black;'>" + 2 + "</td>" + "<td style='border: 1px solid black;'>" + Math.pow(2,2) + "</td>" + "</td>" + "<td style='border: 1px solid black;'>" + Math.pow(2,3) + "</td></tr>");
+document.write("<tr> <td style='border: 1px solid black;'>" + 3 + "</td>" + "<td style='border: 1px solid black;'>" + Math.pow(3,2) + "</td>" + "</td>" + "<td style='border: 1px solid black;'>" + Math.pow(3,3) + "</td></tr>");
+document.write("<tr> <td style='border: 1px solid black;'>" + 4 + "</td>" + "<td style='border: 1px solid black;'>" + Math.pow(4,2) + "</td>" + "</td>" + "<td style='border: 1px solid black;'>" + Math.pow(4,3) + "</td></tr>");
+document.write("<tr> <td style='border: 1px solid black;'>" + 5 + "</td>" + "<td style='border: 1px solid black;'>" + Math.pow(5,2) + "</td>" + "</td>" + "<td style='border: 1px solid black;'>" + Math.pow(5,3) + "</td></tr>");
+document.write("<tr> <td style='border: 1px solid black;'>" + 6 + "</td>" + "<td style='border: 1px solid black;'>" + Math.pow(6,2) + "</td>" + "</td>" + "<td style='border: 1px solid black;'>" + Math.pow(6,3) + "</td></tr>");
+document.write("</table>");
