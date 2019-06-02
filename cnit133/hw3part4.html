@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="javaScript, Functions">
+	<meta name="description" content="Learn Multiplication using javaScript.">
+	<meta name="author" content="Vladimir Parrales">
+	<link rel="stylesheet" href="cnit133.css">
+	<link rel="shortcut icon" href="javascript_icon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="hw3part4.js"></script>
+  <title>Functions</title>
+</head>
+ <body onload="newRandomQuestion()">
+<div id="wrapper">
+ <nav>
+  <ul>
+  	<!-- <li><a href="index.html">Home</a></li> -->
+   <li><a href="hw3part1.html">Part 1</a></li>
+   <li><a href="hw3part2.html">Part 2</a></li>
+   <li><a href="hw3part3.html">Part 3</a></li>
+   <li class="right"><a href="hw3.html">Cover Page</a></li>
+   <!-- <li class="right"><a href="hw2extracredit.html">Extra Credit</a></li> -->
+  </ul>
+</nav>
+<header>
+ <h1> Learn Multiplication</h1>
+</header>
+<main>
+<form id="multiplyForm">
+  <fieldset>
+    <legend>Learn Multiplication</legend>
+    <h3 id="theQuestion">The random question will generate here.</h3>
+<table>
+  <tr>
+    <td><input type="number" id="theAnswer" autofocus></td>
+  </tr>
+</table>
+<br>
+<input type="button" onclick="learnMultiplication()" value="Check if correct">
+<input type="reset" value="Reset">
+</fieldset>
+<br>
+</form>
+</main>
+ <footer>
+   <ul>
+    <li><a href="https://github.com/vparrales" target="_blank" rel="noopener" class="social github">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/vladimir-parrales" target="_blank" rel="noopener" class="social linkedin">LinkedIn</a></li>
+   </ul>
+    <p>Copyright &copy; 2019 javaScript CNIT&dash;133 &verbar; <em>Vladimir Parrales</em></p>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="javaScript, Functions">
+	<meta name="description" content="Sales Comission using javaScript.">
+	<meta name="author" content="Vladimir Parrales">
+	<link rel="stylesheet" href="cnit133.css">
+	<link rel="shortcut icon" href="javascript_icon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="hw3part2.js"></script>
+  <title>Functions</title>
+</head>
+<body>
+<div id="wrapper">
+ <nav>
+  <ul>
+  	<!-- <li><a href="index.html">Home</a></li> -->
+   <li><a href="hw3part1.html">Part 1</a></li>
+   <li><a href="hw3.html">Cover Page</a></li>
+   <li><a href="hw3part3.html">Part 3</a></li>
+   <li class="right"><a href="hw3part4.html">Part 4</a></li>
+   <!-- <li class="right"><a href="hw2extracredit.html">Extra Credit</a></li> -->
+  </ul>
+</nav>
+<header>
+ <h1> Sales Person Comission</h1>
+</header>
+<main>
+<form>
+    <fieldset>
+      <legend>Sales Comission</legend>
+         Salesperson: <input id="salesPerson" type="text" size="20" autofocus name="fullname" placeholder="Enter Full Name" title="Please make sure that the salesperson's name is spelled correctly."><br>
+        <h3>Input the &num; of items sold to calculate weekly earnings&colon;</h3>
+        <table>
+          <tr>
+            <th class="center">Item &num;</th>
+            <th class="center">Price</th>
+            <th class="center">&num; of Items Sold</th>
+          </tr>
+          <tr>
+            <td class="textleft">1</td>
+            <td>$239.99</td>
+            <td class="textleft"><input class="rtext" id="item1" type="number" size="10" min="0"></td>
+          </tr>
+          <tr>
+            <td class="textleft">2</td>
+            <td>$129.75</td>
+            <td class="textleft"><input class="rtext" id="item2" type="number" size="10" min="0"></td>
+          </tr>
+          <tr>
+            <td class="textleft">3</td>
+            <td>$99.95</td>
+            <td class="textleft"><input class="rtext" id="item3" type="number" size="10" min="0"></td>
+          </tr>
+          <tr>
+            <td class="textleft">4</td>
+            <td>$350.89</td>
+            <td class="textleft"><input class="rtext" id="item4" type="number" size="10" min="0"></td>
+          </tr>
+        </table>
+      <input type="button" onclick="saleComission()" value="Submit">
+        <input type="reset" value="Reset">
+        <table>
+        <tr>
+        <th class="center">Item &num;</th>
+        <th class="center">Number Sold</th>
+        <th class="center">Total</th>
+        </tr>
+        <tr>
+          <td class="textleft">1</td>
+          <td><input class="rtext" type="text" id="item1sold" readonly></td>
+          <td><input class="rtext" type="text" id="item1total" readonly></td>
+        </tr>
+        <tr>
+          <td class="textleft">2</td>
+          <td><input class="rtext" type="text" id="item2sold" readonly></td>
+          <td><input class="rtext" type="text" id="item2total" readonly></td>
+        </tr>
+        <tr>
+          <td class="textleft">3</td>
+          <td><input class="rtext" type="text" id="item3sold" readonly></td>
+          <td><input class="rtext" type="text" id="item3total" readonly></td> 
+        </tr>
+        <tr>
+          <td class="textleft">4</td>
+          <td><input class="rtext" type="text" id="item4sold" readonly></td>
+          <td><input class="rtext" type="text" id="item4total" readonly></td>
+        </tr>
+        <tr>
+        <td colspan="2" class="textleft">Total amount sold:</td>
+        <td><input class="rtext" type="text" id="totalSold" readonly></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="textleft">Total weekly earnings:</td>
+        <td><input class="rtext" type="text" id="totalEarnings" readonly></td>
+    </tr>
+    </table>
+    </fieldset>
+    <br>
+  </form>
+</main>
+<br>
+ <footer>
+   <ul>
+    <li><a href="https://github.com/vparrales" target="_blank" rel="noopener" class="social github">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/vladimir-parrales" target="_blank" rel="noopener" class="social linkedin">LinkedIn</a></li>
+   </ul>
+    <p>Copyright &copy; 2019 javaScript CNIT&dash;133 &verbar; <em>Vladimir Parrales</em></p>
+  </footer>
+</div>
+</body>
+</html>

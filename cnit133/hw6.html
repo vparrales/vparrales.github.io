@@ -1,16 +1,73 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="javaScript, Objects">
-  <meta name="description" content="In javaScript objects are variables too. But objects can contain many values.">
-  <meta name="author" content="Vladimir Parrales">
-  <link rel="stylesheet" href="cnit133.css">
-  <link rel="shortcut icon" href="javascript_icon.ico">
-  <title>Objects</title>
- </head>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="javaScript, Objects">
+	<meta name="description" content="In javaScript objects are variables too. But objects can contain many values.">
+	<meta name="author" content="Vladimir Parrales">
+	<link rel="stylesheet" href="cnit133.css">
+	<link rel="shortcut icon" href="javascript_icon.ico">
+	<title>Objects</title>
+</head>
 <body>
-  <div id="comingsoon">Objects Coming Soon!</div>
+<div id="wrapper">
+ <nav>
+  <ul>
+  	<!-- <li><a href="index.html">Home</a></li> -->
+   <li><a href="hw6part1.html">Part 1</a></li>
+   <li><a href="hw6part2.html">Part 2</a></li>
+   <li class="right"><a href="hw6part3.html">Part 3</a></li>
+   <!-- <li><a href="#">Part 4</a></li> -->
+   <!-- <li class="right"><a href="#">Extra Credit</a></li> -->
+  </ul>
+</nav>
+<header>
+ <h1> CNIT 133 Homework 6 &dash; Objects</h1>
+</header>
+<main>
+<p class="vladinfo">
+Part 1: 
+Create a webpage that contains a script that has  a function that uses Math.round, Math.sqrt and Math.floor, toFixed() to obtain the following:
+a) round the floating-point number to the nearest integer
+b) calculate the square root of the floating-point number and round it to an integer
+c) round the floating-point number to the nearest tenths position
+d) round the floating-point number to the nearest hunderdths position
+e) round the floating-point number to the nearest thousandths position
+
+Your page should require the user to enter a floating-point number with AT LEAST 4 decimal positions (no less than that).
+
+Your script should display the original floating-point number, the number rounded to the nearest integer, the square root of the number that is then rounded to an integer, the number rounded to the nearest tenth, the number rounded to the nearest hundredth, and the number rounded to the nearest thousandth.
+
+Be sure to use parseFloat() for the inputted number. Use a form input box that the user will use to input and a textarea to display the output.
+
+When displaying the output, depending on which method you chose, be sure to use toFixed() for displaying the number to the nearest tenths, hundredths, and thousandths positions (just in case you decided to use Math.floor and Math.round for some of the requests for this part). Validate the input and display an error message if the input is invalid. It is acceptable to use jQuery for this problem.
+</p>
+<p class="vladinfo">
+Part 2: 
+Create a webpage that contains a script using a form that allows the user to input several lines of text and a search character and uses the String method charAt to determine the number of occurrences of the search character within the text. Use a form textarea for the text and a form input box for the search character. If the search character is found within the text, display the number of occurrences of the search character in another input box or a textarea (of course, those should be disabled for users to type anything). If the search character is not found within the text then display within a new window (using the window.open() method), the message, 'Search character not found in text string!' along with the search character - make sure that the output input box (or textarea) would be cleared if that error message is showing. Your new window should be a width of 300 pixels, height of 100 pixels, and should not obscure any of the main content already on the page.
+</p>
+<p class="vladinfo">
+Part 3: 
+Create a webpage that does the following:
+</p>
+<p class="vladinfo">
+1. Using toString(), toLocaleString() and toUTCString() for the Date object, write the current date and time in these 3 formats. Using the getTimezoneOffset(), write the hours difference between PST or PDT (Pacific Standard Time or Pacific Daylight Time) and UTC, and the hours difference between EST or EDT (Eastern Standard Time or Eastern Daylight Time) and UTC. Note: EST is 3 hours ahead of PST (Pacific Standard Time). Here is a helpful link for the Date Object (Links to an external site.)Links to an external site.. Note that for EDT (Eastern Daylight Time), the hours difference between EDT and UTC changes by one hour.
+</p>
+<p class="vladinfo">
+2. Input a telephone number as a string in the format (999) 999-9999. The script should use String method split to extract the area code as a token, the first 3 digits of the phone number as a token, and the last 4 digits of the phone number as a token. Display the area code in one text field and the seven-digit phone number in another text field. Make sure that when the user is typing the phone number it will automatically put the phone number in the (999) 999-9999 format - I suggest that you use the jQuery mask for input. 
+</p>
+<p>
+More information about how to use <a href="https://dobsondev.com/2017/04/14/using-jquery-mask-to-mask-form-input/" target="_blank" rel="noopener">jQuery mask</a>
+</p>
+</main>
+ <footer>
+   <ul>
+    <li><a href="https://github.com/vparrales" target="_blank" rel="noopener" class="social github">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/vladimir-parrales" target="_blank" rel="noopener" class="social linkedin">LinkedIn</a></li>
+   </ul>
+    <p>Copyright &copy; 2019 javaScript CNIT&dash;133 &verbar; <em>Vladimir Parrales</em></p>
+  </footer>
+</div>
 </body>
 </html>

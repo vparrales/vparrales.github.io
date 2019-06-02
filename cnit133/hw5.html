@@ -1,16 +1,119 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="javaScript, Arrays">
-  <meta name="description" content="An array in javaScript is a special variable which can hold more than one value at a time.">
-  <meta name="author" content="Vladimir Parrales">
-  <link rel="stylesheet" href="cnit133.css">
-  <link rel="shortcut icon" href="javascript_icon.ico">
-  <title>Arrays</title>
- </head>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="javaScript, Arrays">
+	<meta name="description" content="An array in javaScript is a special variable which can hold more than one value at a time.">
+	<meta name="author" content="Vladimir Parrales">
+	<link rel="stylesheet" href="cnit133.css">
+	<link rel="shortcut icon" href="javascript_icon.ico">
+	<title>Arrays</title>
+	 <style>
+    table, th, td {
+      border: solid black 1px;
+      border-collapse: collapse;
+      text-align: center;
+      padding: 5px;
+    }
+    table {
+      margin: auto;
+      margin-bottom: 10px;
+
+    }
+  </style>
+</head>
 <body>
-  <div id="comingsoon">Arrays Coming Soon!</div>
+<div id="wrapper">
+ <nav>
+  <ul>
+  	<!-- <li><a href="index.html">Home</a></li> -->
+   <li><a href="hw5part1.html">Part 1</a></li>
+   <li><a href="hw5part2.html">Part 2</a></li>
+   <li class="right"><a href="hw5part3.html">Part 3</a></li>
+   <!-- <li><a href="#">Part 4</a></li> -->
+   <!-- <li class="right"><a href="#">Extra Credit</a></li> -->
+  </ul>
+</nav>
+<header>
+ <h1> CNIT 133 Homework 5 &dash; Arrays</h1>
+</header>
+<main>
+<p class="vladinfo firstletter">
+Part 1: 
+Create a webpage containing a form that displays an input text box, radio buttons, checkboxes, and select items; along with a script that executes form validation.
+</p>
+<p class="vladinfo firstletter">
+Your script should validate whether the user has entered data in the input text box, has checked a radio button, has checked at least one checkbox, and has selected an option from the select items.
+</p>
+<p class="vladinfo firstletter">
+Use a submit button to invoke the validation script, so that the form is processed only when the form fields are valid. If a field is invalid then display a message to the user. In your form statement, use method="post" and an action that can be a mailto or a webpage(displaying that the form has been processed), but be sure to use input type="submit" for your submit button. Alternatively you can leave out the form's action and method, but then you should use an input type="button", along with displaying any appropriate messages. 
+</p>
+<p class="vladinfo firstletter">
+Part 2: 
+Create a 2nd webpage that contains a script that utilizes 2 pulldown menus. The first one should utilize an onchange event handler. The second should utilize a button with an onclick event handler to navigate to a page after an option is selected. Each pulldown menu should include at least 3 URL destinations. 
+</p>
+<p class="vladinfo firstletter">
+Part 3:
+Given the following table of data about several of our states from the 2010 census, create a webpage that enables the user to enter a state name (full or abbreviated) and have the State Name, State Capital, and population appear in separate form text fields of the page. The user should be able to start the script by pressing the button, "State Info". Just use the states that are given in the following table for your array. Allow for the user to enter the name of the state in either lower case or upper case letters. Note that solving this problem involves a two-dimensional array. Make sure you validate the input for a correct state abbreviation or state name. If the input is invalid then display an error message.  If the user enter a state that is not part of the list, show a message to the user but if the user retypes the state and click the Submit button and the state is valid, then the "error" message should not be shown and, instead, you should show the information that is coming from the table below - for example, suppose the user typed "california" (all in lowercase), you could show a message with something as: 
+"Thanks for your inquiry, here is the information you requested:<br>
+State abbr = CA<br>
+State Name = California<br>
+Capital = Sacramento<br>
+Population = 37,253,956"
+</p>
+<table>
+  <tr>
+    <th>State Abbr</th>
+    <th>State Name</th>
+    <th>Capital</th>
+    <th>Population</th>
+  </tr>
+  <tr>
+    <td>Al</td>
+    <td>Alabama</td>
+    <td>Montgomery</td>
+    <td>4,779,436</td>
+  </tr>
+  <tr>
+    <td>AK</td>
+    <td>Alaska</td>
+    <td>Juneau</td>
+    <td>710,231</td>
+  </tr>
+  <tr>
+    <td>AZ</td>
+    <td>Arizona</td>
+    <td>Phoenix</td>
+    <td>6,392,017</td>
+  </tr>
+  <tr>
+    <td>AR</td>
+    <td>Arkansas</td>
+    <td>Little Rock</td>
+    <td>2,915,918</td>
+  </tr>
+  <tr>
+    <td>CA</td>
+    <td>California</td>
+    <td>Sacramento</td>
+    <td>37,253,956</td>
+  </tr>
+  <tr>
+    <td>CO</td>
+    <td>Colorado</td>
+    <td>Denver</td>
+    <td>5,029,196</td>
+  </tr>
+</table>
+</main>
+ <footer>
+   <ul>
+    <li><a href="https://github.com/vparrales" target="_blank" rel="noopener" class="social github">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/vladimir-parrales" target="_blank" rel="noopener" class="social linkedin">LinkedIn</a></li>
+   </ul>
+    <p>Copyright &copy; 2019 javaScript CNIT&dash;133 &verbar; <em>Vladimir Parrales</em></p>
+  </footer>
+</div>
 </body>
 </html>

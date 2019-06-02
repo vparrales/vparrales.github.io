@@ -1,16 +1,105 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="javaScript, Looping Statements">
-  <meta name="description" content="Very often when you write code, you want the same block of code to run a number of times. You can use looping statements in your code to do this.">
-  <meta name="author" content="Vladimir Parrales">
-  <link rel="stylesheet" href="cnit133.css">
-  <link rel="shortcut icon" href="javascript_icon.ico">
-  <title>Looping Statements</title>
- </head>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="javaScript, Looping Statements">
+	<meta name="description" content="Very often when you write code, you want the same block of code to run a number of times. You can use looping statements in your code to do this.">
+	<meta name="author" content="Vladimir Parrales">
+	<link rel="stylesheet" href="cnit133.css">
+	<link rel="shortcut icon" href="javascript_icon.ico">
+	<title>Looping Statements</title>
+	<style>
+		th {
+	color: white;
+	background-color: #810000;
+}
+
+tr:nth-child(even) {
+	background-color: #FF7E53;
+}
+tr:nth-child(odd) {
+	background-color: #FFFF3D;
+}
+	</style>
+</head>
 <body>
-  <div id="comingsoon">Looping Statements Coming Soon!</div>
-</body>
+<div id="wrapper">
+ <nav>
+  <ul>
+  	<!-- <li><a href="index.html">Home</a></li> -->
+   <li><a href="hw4part1.html">Part 1</a></li>
+   <li><a href="hw4part2.html">Part 2</a></li>
+   <!-- <li><a href="#">Part 3</a></li> -->
+   <!-- <li><a href="#">Part 4</a></li> -->
+   <li class="right"><a href="hw4extracredit.html">Extra Credit</a></li>
+  </ul>
+</nav>
+<header>
+ <h1> CNIT 133 Homework 4 &dash; Looping Statements</h1>
+</header>
+<main>
+<p class="vladinfo">
+Part 1 &dash; Part 1a: Create a webpage that contains a script, using the for statement, that calculates the product and sum of every third integer from 5 to 20 inclusive and then displays the results, along with some accompanying text.
+
+(Note: You should print a line that contains the result of 5 * 8 * 11 * 14 * 17 * 20 and a second line that contains the result of 5 + 8 + 11 + 14 + 17 + 20). 
+
+Part 1b: On the same webpage as Part 1b, create a script, using the while or do while statement, that calculates the product and sum of every fourth integer from 3 to 31 inclusive an then displays the results, along with some accompanying text.
+
+(Note: You should print a line that contains the result of 3 * 7 * 11 * 15 * 19 * 23 * 27 * 31 and a second line that contains the result of 3 + 7 + 11 + 15 + 19 + 23 + 27 + 31). 
+
+Use jQuery UI to allow the user to drag an element to a specific area of the page - can be any type of element. For more on jQuery UI draggable see this page (Links to an external site.)</p> <br>
+<p class="vladinfo">Part 2 &dash; Create a webpage that contains a script that will calculate compound interest on a principal of $1000 for interest rates of 5, 6, 7, 8, 9, and 10%, for years 1 through 10. The formula to use is :
+
+P is the principal (the initial amount you borrow or deposit) 
+
+r is the annual rate of interest (percentage)
+
+n is the number of years the amount is deposited
+
+A is the amount of money accumulated after n years, including interest
+
+A = P(1 + r)n 
+
+Output in table format the year followed by the total amount calculated for each of the interest rates of 5% - 10%. (Be sure to include cents.) Your 3rd column should contain the corresponding interest rate. For example, the first 5 table rows should display as:</p>
+
+<table>
+	<tr>
+		<th>Year</th>
+		<th>Amount on deposit</th>
+		<th>Interest Rate</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>1050.00</td>
+		<td>0.05</td>
+	</tr>
+		<tr>
+		<td>2</td>
+		<td>1102.50</td>
+		<td>0.05</td>
+	</tr>
+		<tr>
+		<td>3</td>
+		<td>1157.63</td>
+		<td>0.05</td>
+	</tr>
+		<tr>
+		<td>4</td>
+		<td>1215.51</td>
+		<td>0.05</td>
+	</tr>
+</table>
+<p class="vladinfo">Use jQuery or you can use CSS to alternate the background colors of the rows of the table but notice that the first row should be marron (dark red and the font should be white). Note that no input from the user is required for this problem. For more information on calculating compound interest, see this link (Links to an external site.)Links to an external site. </p>
+
+<p class="vladinfo">Extra Credit &dash; Create a webpage that contains a script that reads in the size of the side of a square and displays a hollow square of that size constructed of asterisks. Your script should work for squares of all side sizes between 2 and 10 inclusive. Display an error message if the user enters any number that is not between 2 and 10. Be sure that the output looks like a square. A common error is having the top and bottom row of asterisks appear to be smaller than the sides. [Hint: use nested while or for statements and use a monospaced CSS style for the output.]</p>
+</main>
+ <footer>
+   <ul>
+    <li><a href="https://github.com/vparrales" target="_blank" rel="noopener" class="social github">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/vladimir-parrales" target="_blank" rel="noopener" class="social linkedin">LinkedIn</a></li>
+   </ul>
+    <p>Copyright &copy; 2019 javaScript CNIT&dash;133 &verbar; <em>Vladimir Parrales</em></p>
+  </footer>
+</div></body>
 </html>

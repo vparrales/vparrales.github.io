@@ -1,16 +1,63 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="javaScript, Ajax Applications">
-  <meta name="description" content="Ajax is a set of Web development techniques using many web technologies on the client side to create asynchronous Web applications. With Ajax, web applications can send and retrieve data from a server asynchronously without interfering with the display and behavior of the existing page.">
-  <meta name="author" content="Vladimir Parrales">
-  <link rel="stylesheet" href="cnit133.css">
-  <link rel="shortcut icon" href="javascript_icon.ico">
-  <title>Ajax Applications</title>
- </head>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="javaScript, Ajax Applications">
+	<meta name="description" content="Ajax is a set of Web development techniques using many web technologies on the client side to create asynchronous Web applications. With Ajax, web applications can send and retrieve data from a server asynchronously without interfering with the display and behavior of the existing page.">
+	<meta name="author" content="Vladimir Parrales">
+	<link rel="stylesheet" href="cnit133.css">
+	<link rel="shortcut icon" href="javascript_icon.ico">
+	<title>Ajax Applications</title>
+	<script>
+function showHint(str) {
+    if (str.length == 0) { 
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        }
+        xmlhttp.open("GET", "gethint.php?q="+str, true);
+        xmlhttp.send();
+    }
+}
+</script>
+</head>
 <body>
-  <div id="comingsoon">Ajax Applications Coming Soon!</div>
+<div id="wrapper">
+ <nav>
+  <ul>
+  	<li><a href="hw8.html">Home</a></li>
+   <!-- <li><a href="hw8part1.html">Part 1</a></li> -->
+   <!-- <li><a href="#">Part 2</a></li>
+   <li><a href="#">Part 3</a></li>
+   <li><a href="#">Part 4</a></li> -->
+   <li class="right"><a href="hw8part1.html">Part 1</a></li>
+  </ul>
+</nav>
+<header>
+ <h1> CNIT 133 Homework 8 &dash; Ajax Applications</h1>
+</header>
+<main>
+<p class="vladinfo">Part 1:
+
+Recreate the 'gethint' Ajax example from <a href="https://www.w3schools.com/php/php_ajax_php.asp" target="_blank" rel="noopener">W3Schools</a> (Links to an external site.) Use the php file containing the hints and expand them to include several more names as hints.
+</p>
+<p class="vladinfo">
+Note: It is recommended to upload your php script (file) to the web hosting server, into the same directory where your HTML file resides. Be sure to give your php directory read and execute permissions (chmod 700 or 755 php). Remember that you can use the setup script, after login in Hills (using Terminal in Mac or using PuTTY in Windows), and the script will set up automatically the right permissions to any files and folders from the public_html down in case you get the FORBIDDEN message to the .php program you will upload.
+</p>
+</main>
+ <footer>
+   <ul>
+    <li><a href="https://github.com/vparrales" target="_blank" rel="noopener" class="social github">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/vladimir-parrales" target="_blank" rel="noopener" class="social linkedin">LinkedIn</a></li>
+   </ul>
+    <p>Copyright &copy; 2019 javaScript CNIT&dash;133 &verbar; <em>Vladimir Parrales</em></p>
+  </footer>
+</div>
 </body>
 </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="javaScript, Functions">
+	<meta name="description" content="Calculating a final grade using  functions in javaScript.">
+	<meta name="author" content="Vladimir Parrales">
+	<link rel="stylesheet" href="cnit133.css">
+	<link rel="shortcut icon" href="javascript_icon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="hw3part1.js"></script>
+  <title>Functions</title>
+</head>
+ <body>
+<div id="wrapper">
+ <nav>
+  <ul>
+  	<!-- <li><a href="index.html">Home</a></li> -->
+   <li><a href="hw3.html">Cover Page</a></li>
+   <li><a href="hw3part2.html">Part 2</a></li>
+   <li><a href="hw3part3.html">Part 3</a></li>
+   <li class="right"><a href="hw3part4.html">Part 4</a></li>
+   <!-- <li class="right"><a href="hw2extracredit.html">Extra Credit</a></li> -->
+  </ul>
+</nav>
+<header>
+ <h1> Student Grades</h1>
+</header>
+<main>
+  <div id="flip">Click to Show/Hide Instructions</div>
+<div id="panel">The following webpage contains the heading, Student Grades, and uses a script that inputs a student's homework average, mid-term exam score, final exam score, and ACR (all as integers)</div>
+  <br>
+  <form>
+    <fieldset>
+      <legend>Calculate Grade</legend>
+      <table>
+        <tr>
+          <td>Homework Average</td>
+          <td>50&percnt;</td>
+          <td><input type="number" min="0" max="100" id="hwAvg" autofocus></td>
+        </tr>
+        <tr>
+          <td>Midterm Exam</td>
+          <td>20&percnt;</td>
+          <td><input type="number" min="0" max="100" id="midExam"></td>
+        </tr>
+        <tr>
+          <td>Final Exam</td>
+          <td>20&percnt;</td>
+          <td><input type="number" min="0" max="100" id="finalExam"></td>
+        </tr>
+        <tr>
+          <td>ACR</td>
+          <td>10&percnt;</td>
+          <td><input type="number" min="0" max="100" id="ACR"></td>
+        </tr>
+      </table>
+      Results:
+      <textarea rows="6" cols="40" id="results" readonly></textarea>
+      <br>
+      <input type="button" onclick="calcGrade()" value="Calculate Grade!">
+      <input type="reset" value="Reset">
+      <button type="button">Click to fade results</button>
+    </fieldset>
+    <br>
+  </form>
+</main>
+ <footer>
+   <ul>
+    <li><a href="https://github.com/vparrales" target="_blank" rel="noopener" class="social github">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/vladimir-parrales" target="_blank" rel="noopener" class="social linkedin">LinkedIn</a></li>
+   </ul>
+    <p>Copyright &copy; 2019 javaScript CNIT&dash;133 &verbar; <em>Vladimir Parrales</em></p>
+  </footer>
+</div>
+</body>
+</html>

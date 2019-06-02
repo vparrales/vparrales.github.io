@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="javaScript, Functions">
+	<meta name="description" content="Celsius and Fahrenheit temperature using javaScript.">
+	<meta name="author" content="Vladimir Parrales">
+	<link rel="stylesheet" href="cnit133.css">
+	<link rel="shortcut icon" href="javascript_icon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="hw3part3.js"></script>
+  <title>Functions</title>
+</head>
+ <body>
+<div id="wrapper">
+ <nav>
+  <ul>
+  	<!-- <li><a href="index.html">Home</a></li> -->
+   <li><a href="hw3part1.html">Part 1</a></li>
+   <li><a href="hw3part2.html">Part 2</a></li>
+   <li><a href="hw3.html">Cover Page</a></li>
+   <li class="right"><a href="hw3part4.html">Part 4</a></li>
+   <!-- <li class="right"><a href="hw2extracredit.html">Extra Credit</a></li> -->
+  </ul>
+</nav>
+<header>
+ <h1> Celsius &amp; Fahrenheit</h1>
+</header>
+<main>
+  <!-- <p class="firstletter">Insert a temperature and convert it to &deg;F or &deg;C!</p> -->
+<form>
+  <fieldset>
+    <legend>Temperature Converter</legend>
+<table>
+  <tr>
+    <!-- <td>&deg;F</td> -->
+    <td><input  class="temp" type="number" id="tempInput" placeholder="Input temperature here" required="Please enter a number" autofocus></td>
+  </tr>
+  <tr>
+    <!-- <td>&deg;C</td> -->
+    <td><input class="results" type="number" id="results" placeholder="Results" disabled></td>
+  </tr>
+</table>
+<input  class="cButton" type="button" onclick="fahrenheitToCelsius()" value="&deg;C">
+<input  class="fButton" type="Button" onclick="celsiusToFahrenheit()" value="&deg;F">
+<input  class="reset" type="reset" id="reset" value="Reset">
+</form>
+</fieldset>
+<br>
+</main>
+ <footer>
+   <ul>
+    <li><a href="https://github.com/vparrales" target="_blank" rel="noopener" class="social github">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/vladimir-parrales" target="_blank" rel="noopener" class="social linkedin">LinkedIn</a></li>
+   </ul>
+    <p>Copyright &copy; 2019 javaScript CNIT&dash;133 &verbar; <em>Vladimir Parrales</em></p>
+  </footer>
+</div>
+</body>
+</html>
