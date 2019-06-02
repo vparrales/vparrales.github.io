@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="javaScript, Looping Statements">
+	<meta name="description" content="A script that will calculate compound interest on a principal of $1000 for interest rates of 5, 6, 7, 8, 9, and 10%, for years 1 through 10.">
+	<meta name="author" content="Vladimir Parrales">
+	<link rel="stylesheet" href="cnit133.css">
+	<link rel="shortcut icon" href="javascript_icon.ico">
+	<title>Looping Statements</title>
+	<style>
+
+	/*Style for part 2 table using flexbox*/
+
+	table {
+ 	display: flex;
+    flex-flow: row wrap;
+    margin: 10px;
+    /*flex-direction: row;*/
+    /*justify-content: center;*/
+
+}
+
+th {
+	color: white;
+	background-color: #810000;
+}
+
+tr:nth-child(even) {
+	background-color: #FF7E53;
+}
+tr:nth-child(odd) {
+	background-color: #FFFF3D;
+}
+
+p > a {
+	text-decoration: none;
+}
+
+p > a:link {
+	color: green;
+}
+
+p > a:visited {
+	color: violet;
+}
+
+p > a:hover {
+	color: purple;
+}
+
+	</style>
+
+
+</head>
+<body>
+<div id="wrapper">
+ <nav>
+  <ul>
+  	<!-- <li><a href="index.html">Home</a></li> -->
+   <li><a href="hw4part1.html">Part 1</a></li>
+   <li><a href="hw4.html">Cover Page</a></li>
+   <!-- <li><a href="#">Part 3</a></li> -->
+   <!-- <li><a href="#">Part 4</a></li> -->
+   <li class="right"><a href="hw4extracredit.html">Extra Credit</a></li>
+  </ul>
+</nav>
+<header>
+ <h1> CNIT 133 Homework 4 &dash; Part 2 &lpar; Compound Interest &rpar;</h1>
+</header>
+<main>
+<p class="vladinfo firstletter">Part 2 &dash; Create a webpage that contains a script that will calculate compound interest on a principal of $1000 for interest rates of 5, 6, 7, 8, 9, and 10%, for years 1 through 10. The formula to use is :
+
+P is the principal (the initial amount you borrow or deposit) 
+
+r is the annual rate of interest (percentage)
+
+n is the number of years the amount is deposited
+
+A is the amount of money accumulated after n years, including interest
+
+A = P(1 + r)n 
+
+Output in table format the year followed by the total amount calculated for each of the interest rates of 5% - 10%. (Be sure to include cents.) Your 3rd column should contain the corresponding interest rate. For example, the first 5 table rows should display as:</p>
+
+<table>
+	<tr>
+		<th>Year</th>
+		<th>Amount on deposit</th>
+		<th>Interest Rate</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>1050.00</td>
+		<td>0.05</td>
+	</tr>
+		<tr>
+		<td>2</td>
+		<td>1102.50</td>
+		<td>0.05</td>
+	</tr>
+		<tr>
+		<td>3</td>
+		<td>1157.63</td>
+		<td>0.05</td>
+	</tr>
+		<tr>
+		<td>4</td>
+		<td>1215.51</td>
+		<td>0.05</td>
+	</tr>
+</table>
+<p class="vladinfo firstletter">Use jQuery or you can use CSS to alternate the background colors of the rows of the table but notice that the first row should be marron (dark red and the font should be white). Note that no input from the user is required for this problem. For more information on calculating compound interest, see this link&colon; <a href="https://www.thoughtco.com/what-is-compound-interest-3863068" target="_blank" rel="noopener">What Is Compound Interest?</a> </p>
+<script src="hw4part2.js"></script>
+</main>
+ <footer>
+   <ul>
+    <li><a href="https://github.com/vparrales" target="_blank" rel="noopener" class="social github">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/vladimir-parrales" target="_blank" rel="noopener" class="social linkedin">LinkedIn</a></li>
+   </ul>
+    <p>Copyright &copy; 2019 javaScript CNIT&dash;133 &verbar; <em>Vladimir Parrales</em></p>
+  </footer>
+</div>
+
+</body>
+</html>
