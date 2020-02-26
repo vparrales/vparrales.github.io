@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Maven+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F7F7;
+    margin: 0 auto;
+    font-family: 'Maven Pro', sans-serif;
+    text-align: center;
+    font-size: .9em;
+    word-spacing: 1px;
+    letter-spacing: .3px;
+    line-height: 26px;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-family: 'Josefin Slab', serif;
+}
+/* IMAGE OF VLAD */
+
+#vlad {
+    float: left;
+    margin: 0 8px 0 0;
+    /* border: solid gray 1px; */
+    border-radius: 5%;
+}
+/* MOBILE GRID START*/
+
+#wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    grid-template-areas:
+            "nav"
+            "header"
+            "main"
+            "footer";
+
+}
+
+nav {
+    grid-area: nav;
+    width: 100%;
+}
+
+header {
+    grid-area: header;
+    /* margin: 0 auto; */
+    /* width: 100%; */
+}
+
+main {
+    grid-area: main;
+    /* text-align: left; */
+}
+
+footer {
+    grid-area: footer;
+    margin-top: 10px;
+}
+
+/* MAIN NAVIGATION */
+
+nav ul {
+    list-style-type: none;
+    margin: 2px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+
+nav li > a:hover {
+    background-color: #111;
+    color: #42A1B7;
+}
+
+.nav-link.current {
+    color: #42A1B7;
+}
+
+.w-nav-brand {
+    position: relative;
+    float: left;
+    text-decoration: none;
+    color: #333333;
+}
+
+/* SOCIAL MEDIA FOOTER ICONS START*/
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+a.social {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    opacity: .5;
+    transition: all .25s;
+}
+
+a.yelp {
+    background-image: url(yelp.png);
+    border-radius: 50%;
+}
+
+a.facebook {
+    background-image: url(facebook.png);
+    border-radius: 50%;
+}
+
+a.instagram {
+    background-image: url(instagram.png);
+    border-radius: 50%;
+}
+
+a.social:hover {
+    opacity: 1;
+}
+
+/* PARAGRAPH STYLES */
+
+.firstletter::first-letter {
+    font-size: 1.7em;
+}
+
+/* CSS FOR DESKTOPS */
+
+@media screen and (min-width: 481px) {
+    #wrapper {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-rows: auto auto auto auto;
+        max-width: 960px;
+        margin: 0 auto;
+        grid-template-areas: 
+                    "nav nav nav nav nav"
+                    "header header header header"
+                    "main main main main"
+                    "footer footer footer footer";
+    }
+
+/* MAIN NAVIGATION FOR DESKTOPS */
+
+nav li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+/* PARAGRAPH STYLE */
+
+.maininfo {
+    /* border-left: 1px solid black; */
+    padding-left: 5px;
+}
+
+/* FORM INPUT */
+
+input {
+    width: 468px;
+    height: 50px;
+    background-color: #5FA6B6;
+    color: white;
+    font-size: .9em;
+    font-weight: bolder;
+    padding-left: 5px;
+    margin: 0 auto;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.submit {
+    width: 120px;
+    height: 25px;
+    background-color: #3AB60F;
+}
+
+.reset {
+    width: 120px;
+    height: 25px;
+    background-color: #DE4F1F;
+}
+
+textarea {
+    background-color: #5FA6B6;
+    font-size: .9em;
+    font-weight: bolder;
+    padding-left: 5px;
+    color: white;
+}
+
+
+}
+
+/* FORM INPUT */
+
+input {
+    width: 285px;
+    height: 50px;
+    background-color: #5FA6B6;
+    color: white;
+    font-size: .9em;
+    font-weight: bolder;
+    padding-left: 5px;
+    margin: 0 auto;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.submit {
+    width: 120px;
+    height: 25px;
+    background-color: #3AB60F;
+}
+
+.reset {
+    width: 120px;
+    height: 25px;
+    background-color: #DE4F1F;
+}
+
+textarea {
+    background-color: #5FA6B6;
+    font-size: .9em;
+    font-weight: bolder;
+    padding-left: 5px;
+    color: white;
+}
+
+.textleft {
+    text-align: left;
+    padding-left: 20px;
+    }
+/* SKILLS LIST */
+
+ul.skills {
+    padding: 0;
+    text-align: center;
+}
+
+.skills li {
+    border-radius: 6px;
+    display: inline-block;
+    background: #e24d20;
+    color: white;
+    padding: 5px 5px;
+    margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+    background: teal;
+}
+
+/* PROJECTS LIST */
+
+ul.projects {
+    padding: 0;
+}
+
+.projects li {
+    display: inline-block;
+}
+
+.projectmain {
+    margin-bottom: 100px;
+}
+
+
+
+
+.services {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.icon8 small a:link {
+    color: rgb(90, 168, 187);
+    text-decoration: none;
+}
+
+.icon8 small a:visited {
+    color: chocolate;
+}
+
+.icon8 small a:hover {
+    color: rgb(236, 170, 84);
+}
+
